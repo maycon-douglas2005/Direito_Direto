@@ -1,0 +1,95 @@
+header{
+    display: grid;
+    background-color: #0C0C24;
+    height: 65px;
+    grid-template-columns: 79% 20% ;
+    grid-template-rows: 50% 45%;
+    text-align: end;
+    grid-template-areas: 
+        "logo link1"
+        "nada link2"
+    ;
+}
+body{
+   
+    margin: 0px;
+    background-color: #111130;
+    color: white;
+}
+.logo {
+    grid-area: logo;
+    position: relative;
+    height: 4em;
+    padding: 0px;
+}
+.link1{
+    grid-area: link1;
+    position: relative;
+}
+.link2{
+    grid-area: link2;
+    position: relative;
+}
+a{
+    color: white;
+    text-decoration: none;
+    padding: 0px;
+}
+a:hover{
+    color: blue;
+}
+main {
+    display: grid;
+    height: 500px; 
+}
+.caixaIdentificação{
+    display: grid;
+    position: relative;
+    background-color: #0C0C24;
+    width: 30%;
+    height: 25%;
+    left: 35%;
+    top: 30%; 
+    grid-template-columns:  30% 30% 30% 30% 30%;
+    grid-template-rows: 50% 50% ;
+    grid-template-areas: 
+        "h1 h1 h1 h1 h1"
+        "nada PF nada2 PJ nada3"
+
+    ;
+}
+.titulo{
+    position: relative;
+    grid-area: h1;
+    padding: 2px;
+    align-self: center;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 120%;
+    width: 250%;
+    left: 50%;
+
+}   
+.botaoPF{
+    position: relative;
+    right: 60%;
+    grid-area: PF;
+    background-color: #008000;
+    padding: 2px;
+    align-self: center;
+    border-radius: 10px;
+    text-align: center;
+    bottom: 25%;
+}   
+.botaoPJ{
+    position: relative;
+    right: 60%;
+    grid-area: PF;
+    background-color: #008000;
+    padding: 2px;
+    align-self: center;
+    border-radius: 10px;
+    text-align: center;
+    bottom: 25%;
+    left: 80%;
+}   
