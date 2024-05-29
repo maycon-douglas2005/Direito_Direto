@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro do Advogado</title>
+    <link rel="stylesheet" href="../css/cadAdvogado.css">
+</head>
+<body>
+    <header>
+        <img src="../images/logo.png" alt="Logo">
+
+        <nav class="link1">
+            <a href="comoVoceSeIdentifica.html">Cadastrar-se | </a>
+            <a href="">Login</a>
+        </nav>
+        <nav class="link2">
+            <a href="">Página Inicial | </a>
+            <a href="">Sobre | </a>
+            <a href="">Contato</a>
+        </nav>
+    </header>
+    <main>
+        <div class="retangulo">
+            <h1 class="titulo">Preencha Seus Dados</h1>
+            <h2 class="subtitulo1">Dados Cadastrais</h2>
+            <form class="formulario" action="">
+                <div class="divCaixaNome">
+                    <label  for="nomeCompletoAdvogado">Nome Completo: </label>
+                    <input required type="text" name="nomeCompletoAdvogado" size="70">
+                </div><br>
+                <div class="divCaixaData">
+                    <label for="dataNasciAdvogado">Data de Nascimento: </label>
+                    <input required type="date" name="dataNasciAdvogado">
+                </div>
+                <div class="divSexoAdvogado">
+                    <label for="sexoDoAdvogoado">Sexo:</label>
+                    <select name="sexoDoAdvogado">
+                        <option value="Masculino">Masculino</option>
+                        <option value="Feminino">Feminino</option>
+                    </select>
+                </div>
+                <div class="divCelularAdvogado">
+                    <label for="celularAdvogado">Celular:</label>
+                    <input type="number" name="celularAdvogado">
+                </div>
+                <div class="divEmailAdvogado">
+                    <label for="emailAdvogado">E-mail: </label>
+                    <input type="email" name="emailAdvogado" size="34">
+                </div> 
+                <div class="divModeloDeTrabalho">
+                    <label for="modeloDeTrabalho">Modelo de Consultoria: </label>
+                    <select name="modeloDeTrabalho">
+                        <option value="Presencial">Presencial</option>
+                        <option value="Online">Online</option>
+                        <option value="Híbrido">Híbrido</option>
+                    </select>
+                </div>
+                <div class="divNumeroDaOab">
+                    <label for="numeroOab">Número da OAB: </label>
+                    <input type="number" name="numeroOAB">
+                </div>
+            <h2 class="subtitulo2">Endereço</h2>
+                <div class="divCepAdvogado">
+                    <label for="celAdvogado">CEP: </label>
+                    <input type="number" name="cepAdvogado">
+                </div>
+                <div class="divBairroAdvogado">
+                    <label for="bairroAdvogado">Bairro: </label>
+                    <input type="text" name="bairroAdvogado" size="33">
+                </div>
+                <div class="divRuaAdvogado">
+                    <label for="ruaAdvogado">Rua: </label>
+                    <input type="text" name="ruaAdvogado" size="30">
+                </div>
+                <div class="divNumeroCasaAdvogado">
+                    <label for="numeroCasaAdvogado">Número: </label>
+                    <input type="number" name="numeroCasaAdvogado">
+                </div>
+                <div class="divCidadeAdvogado">
+                    <label for="cidadeAdvogado">Cidade: </label>
+                    <input type="text" name="cidadeAdvogado">
+                </div>
+                <div class="divComplementoCasaAdvogado">
+                    <label for="complementoCasaAdvogado">Complemento: </label>
+                    <input type="text" name="complementoCasaAdvogado" size="26">
+                </div>
+                <div class="divBotaoEnviar">
+                    <input class="botaoEnviar" type="submit" value="Enviar" > 
+                </div>
+                
+            </form>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,159 @@
+* {
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+}
+header{
+    display: grid;
+    background-color: #0C0C24;
+    height: 65px;
+    grid-template-columns: 79% 20%;
+    grid-template-rows: 50% 45%;
+    grid-template-areas: 
+        "logo link1"
+        "nada link2"
+    ;
+    text-align: end;
+}
+body{
+    background-color: #111130;
+}
+img {
+    grid-area: logo;
+    position: relative;
+    height: 4em;
+}
+.link1{
+    grid-area: link1;
+}
+.link2{
+    grid-area: link2;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: blue;
+}
+main{
+    display: grid;
+    position: relative;
+    justify-content: center;
+    top: 40px;
+
+}   
+.retangulo{
+    display: grid;
+    grid-template-rows: 5% 12% 1% 10%;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-areas: 
+        "espaço1 espaço2 espaço3"
+        "nada2 titulo titulo"
+        "subtitulo1 nada nada"
+        "formulario formulario formulario"
+
+    ;
+    position: relative;
+    background-color: #0C0C24;
+    height: 485px;
+    width: 700px;
+    color: white;
+
+}   
+.titulo{
+    grid-area: titulo;  
+}
+.subtitulo1{
+    grid-area: subtitulo1;
+    position: relative;
+    left: 15%;
+}
+.formulario{
+    display: grid;
+    grid-area: formulario;
+    position: relative;
+    left: 30px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100% 51% 55% 52% 100% 100% 52% 52% 100% 50%;
+    grid-template-areas:
+        "nads nads2" 
+        "caixaNome caixaNome"
+        "caixaData sexoAdvogado"
+        "celularAdvogado emailAdvogado"
+        "modelo numeroOAB"
+        "subtitulo2 espaço"
+        "cepAdvogado bairroAdvogado"
+        "ruaAdvogado NumeroCasaAdvogado"
+        "cidadeAdvogado complementoAdvogado"
+        "botaoEnviar nada"
+    ;
+    
+}
+.divCaixaNome{
+    grid-area: caixaNome;
+}
+.divCaixaData{
+    grid-area: caixaData;
+}
+.divSexoAdvogado{
+    grid-area: sexoAdvogado;
+}
+select {
+    background-color: #1c1c49;
+    border-radius: 10px;
+    color: white;
+    padding: 2px;
+}
+.divCelularAdvogado{
+    grid-area: celularAdvogado;
+}
+input {
+    background-color: #1c1c49;
+    border-radius: 10px;
+    color: white;
+    padding: 2px;
+}
+.divEmailAdvogado{
+    grid-area: emailAdvogado;
+}
+.subtitulo2{
+    grid-area: subtitulo2;
+}
+.divCepAdvogado{
+    grid-area: cepAdvogado;
+}
+.divBairroAdvogado{
+    grid-area: bairroAdvogado;
+}
+.divRuaAdvogado{
+    grid-area: ruaAdvogado;
+}
+.divNumeroCasaAdvogado{
+    grid-area: NumeroCasaAdvogado;
+}
+.divCidadeAdvogado{
+    grid-area: cidadeAdvogado;
+}
+.divComplementoCasaAdvogado{
+    grid-area: complementoAdvogado;
+}
+.divBotaoEnviar{
+    grid-area: botaoEnviar;
+    justify-self: center;
+    position: relative;
+    left: 10%;
+}
+.botaoEnviar{
+    width: 550%;
+    font-size: 20px;
+}
+.botaoEnviar:hover{
+    background-color: #008000;
+}
+.divModeloDeTrabalho{
+    grid-area: modelo;
+}
+.divNumeroDaOab{
+    grid-area: numeroOAB;
+}
