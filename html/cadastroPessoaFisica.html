@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="../css/estilosCadPessoaFisica.css">
+</head>
+<body>
+    <header>
+        <img src="../images/logo.png" alt="Logo">
+
+        <nav class="link1">
+            <a href="comoVoceSeIdentifica.html">Cadastrar-se | </a>
+            <a href="">Login</a>
+        </nav>
+        <nav class="link2">
+            <a href="">Página Inicial | </a>
+            <a href="">Sobre | </a>
+            <a href="">Contato</a>
+        </nav>
+    </header>
+    <main>
+        <div class="retangulo">
+            <h1 class="titulo">Preencha Seus Dados</h1>
+            <h2 class="subtitulo1">Dados Cadastrais</h2>
+            <form class="formulario" action="">
+                <div class="divCaixaNome">
+                    <label  for="nomeCompletoCliente">Nome Completo: </label>
+                    <input required type="text" name="nomeCompletoCliente" size="70">
+                </div><br>
+                <div class="divCaixaData">
+                    <label for="dataNasciCliente">Data de Nascimento: </label>
+                    <input required type="date" name="dataNasciCliente">
+                </div>
+                <div class="divSexoCliente">
+                    <label for="sexoDoCliente">Sexo:</label>
+                    <select name="sexoDoCliente">
+                        <option value="Masculino">Masculino</option>
+                        <option value="Feminino">Feminino</option>
+                    </select>
+                </div>
+                <div class="divCelularCliente">
+                    <label for="celularCliente">Celular:</label>
+                    <input type="number" name="celularCliente">
+                </div>
+                <div class="divEmailCliente">
+                    <label for="emailCliente">E-mail: </label>
+                    <input type="email" name="emailCliente" size="34">
+                </div> 
+            <h2 class="subtitulo2">Endereço</h2>
+                <div class="divCepCliente">
+                    <label for="celCliente">CEP: </label>
+                    <input type="number" name="cepCliente">
+                </div>
+                <div class="divBairroCliente">
+                    <label for="bairroCliente">Bairro: </label>
+                    <input type="text" name="bairroCliente" size="33">
+                </div>
+                <div class="divRuaCliente">
+                    <label for="ruaCliente">Rua: </label>
+                    <input type="text" name="ruaCliente" size="30">
+                </div>
+                <div class="divNumeroCasaCliente">
+                    <label for="numeroCasaCliente">Número: </label>
+                    <input type="number" name="numeroCasaCliente">
+                </div>
+                <div class="divCidadeCliente">
+                    <label for="cidadeCliente">Cidade: </label>
+                    <input type="text" name="cidadeCliente">
+                </div>
+                <div class="divComplementoCasaCliente">
+                    <label for="complementoCasaCliente">Complemento: </label>
+                    <input type="text" name="complementoCasaCliente" size="26">
+                </div>
+                <div class="divBotaoEnviar">
+                    <input class="botaoEnviar" type="submit" value="Enviar" > 
+                </div>
+                
+            </form>
+        </div>
+    </main>
+</body>
+</html>
