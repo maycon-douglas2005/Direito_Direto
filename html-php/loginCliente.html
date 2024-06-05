@@ -1,6 +1,3 @@
-<?php
-    
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,14 +25,14 @@
         <article>
             <h1>Login</h1>
             <h2>Use uma conta para fazer logon</h2>
-            <form action="../bd/sistemaLoginCliente.php" method="POST">
+            <form action="../bd/sistemaLoginCliente.php" method="post">
                 <div class="email">
                     <label for="emailCliente">Endereço de e-mail: </label><br>
-                    <input class="email" type="email" name="emailCliente">
+                    <input class="email" type="email" name="emailCliente" id="emailCliente">
                 </div>
                 <div class="senha">
                     <label for="senhacliente">Senha: </label><br>
-                    <input class="senha" type="password" name="senhaliente">
+                    <input class="senha" type="password" name="senhaCliente" id="senhaCliente">
                 </div>
                 <div class="lembrarMe">
                     <input  type="checkbox" name="lembrarMe"> Lembrar-me?

@@ -1,3 +1,12 @@
+<?php
+    session_start();
+    if((!isset($_SESSION['emailCliente']) == true) and (!isset($_SESSION['senhaCliente']) == true)) {
+        unset($_SESSION['emailCliente']);
+        unset($_SESSION['senhaCliente']);
+        header('Location: loginCliente.html');
+    }
+    $logado = $_SESSION['emailCliente'];    
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +22,7 @@
     <link rel="stylesheet" href="../css/cabecario.css">
     <link rel="stylesheet" href="../css/pessoaFisicaLogado.css">
 
-    <title>Página Inicial</title>
+    <title>Home</title>
 </head>
 <body>
     <header>
@@ -21,10 +30,12 @@
 
         <div class="menu">
             <nav id="registroLogin">
-                <ul >
+                <ul>
                     <a href="comoVoceSeIdentificaCadastro.html"><li>Cadastrar-se</li></a>
                     <span> | </span>
                     <a href="comoVoceSeIdentificaLogin.html"><li>Login</li></a>
+                    <span> | </span>
+                    <a href="../bd/encerrarSessaoCliente.php"><li>Sair</li></a>
                 </ul>
             </nav>
 

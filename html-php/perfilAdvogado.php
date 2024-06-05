@@ -1,3 +1,12 @@
+<?php
+    session_start();
+    if((!isset($_SESSION['emailAdvogado']) == true) and (!isset($_SESSION['senhaAdvogado']) == true)){
+        unset($_SESSION['emailAdvogado']);
+        unset($_SESSION['senhaAdvogado']);
+        header('Location: loginAdvogado.html');
+    }
+    $logado = $_SESSION['emailAdvogado'];
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,6 +28,8 @@
                     <a href="comoVoceSeIdentificaCadastro.html"><li>Cadastrar-se</li></a>
                     <span> | </span>
                     <a href="comoVoceSeIdentificaLogin.html"><li>Login</li></a>
+                    <span> | </span>
+                    <a href="../bd/encerrarSessaoAdvogado.php"><li>Sair</li></a>
                 </ul>
             </nav>
 

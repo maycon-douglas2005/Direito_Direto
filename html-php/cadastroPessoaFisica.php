@@ -22,6 +22,8 @@
         $stmt->bind_param("ssssssssssssss", $nome, $sexo, $dataNasci, $celular, $email, $senha, $modeloConsultorio, $numeroOAB, $cep, $rua, $numerocasa, $cidade, $bairro, $complemento);
     
         $stmt->execute();
+
+        header('Location: loginCliente.html');
     }
 ?>
 <!DOCTYPE html>
