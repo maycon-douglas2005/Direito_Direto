@@ -19,49 +19,47 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">    
 
     <!--CSS-->
-    <link rel="stylesheet" href="../css/cabecario.css">
     <link rel="stylesheet" href="../css/pessoaFisicaLogado.css">
 
     <title>Home</title>
 </head>
 <body>
     <header>
-        <img id="logo" src="../img/logo_direitoDireto.png" alt="Logo">
+        <img src="../img/logo_direitoDireto.png" alt="Logo">
 
-        <div class="menu">
-            <nav id="registroLogin">
-                <ul>
-                    <a href="comoVoceSeIdentificaCadastro.html"><li>Cadastrar-se</li></a>
-                    <span> | </span>
-                    <a href="comoVoceSeIdentificaLogin.html"><li>Login</li></a>
-                    <span> | </span>
-                    <a href="../bd/encerrarSessaoCliente.php"><li>Sair</li></a>
-                </ul>
+        <div class="navs"> 
+            <nav >
+            
+                    <a href="comoVoceSeIdentificaCadastro.html">Cadastrar-se |</a>
+                    <a href="comoVoceSeIdentificaLogin.html">Login |</a>
+                    <a href="../bd/encerrarSessaoCliente.php">Sair</a>
+                
             </nav>
 
-            <nav id="menu">
-                <ul >
-                    <a href="../index.html"><li>Página Inicial</li></a>
-                    <a href="http://"><li>Busca</li></a>
-                    <a href="http://"><li>Sobre</li></a>
-                </ul>
+            <nav class="nav2">
+            
+                    <a href="../index.html">Página Inicial |</a>
+                    <a href="http://">Busca |</a>
+                    <a href="http://">Sobre</a>
+                
             </nav>
-        </div>           
+        </div>      
     </header>
 
     <main>
 
-        <section class="filtro-advogado">    
+        <section class="campoDePesquisa">    
             <form action="#" >
-                <fieldset class="filtro">
-                    <legend>Filtro</legend>
-
-                    <div class="localizacao">
-                        <label for="localizacao">Localização:</label>
-                        <input type="search" name="localizacao" id="localizacao">
+            <div class="tituloFiltros">
+                <h1>Filtros</h1>
+            </div>
+                <div class="filtros">
+                    <div class="divCampoLocalização">
+                        <label class="labelLocalização" for="localizacao">Localização:</label><br>
+                        <input class="divCampoLocalização" type="search" name="localizacao" id="localizacao">
                     </div>
 
-                    <div class="raioDistancia">
+                    <div class="divRadioDistancia">
                         <label for="raioDistancia">Raio de Distancia:</label>
                         <select name="raioDistancia" id="raioDistancia">
                             <option value="vazio"></option>
@@ -71,7 +69,7 @@
                         </select>
                     </div>
 
-                    <div class="especialidade">
+                    <div class="divEspecialidade">
                         <label for="especialidade">Especialidade:</label>
                         <select name="especialidade" id="especialidade">
                             <option value="vazio"></option>
@@ -91,7 +89,7 @@
                         </select>
                     </div>
 
-                    <div class="honorario">
+                    <div class="divHonorario">
                         <label for="honorario">Honorário:</label>
                         <select name="honorario" id="honorario">
                             <option value="vazio"></option>
@@ -103,34 +101,80 @@
                         </select>
                     </div>
 
-                    <div class="consultaGratuita">
-                        <label for="consultaGratuita">Consulta Gratuita:</label>
-                        <input type="checkbox" name="consultaGratuita" id="consultaGratuita">
+                    <div class="divConsultaGratuita">
+                            <label for="consultaGratuita">Consulta Gratuita:</label>
+                            <input type="checkbox" name="consultaGratuita" id="consultaGratuita">
                     </div>
 
-                    <div class="enviar">
+                    <div class="divBotaoEnviar">
                         <button type="submit">Aplicar</button>
                     </div>
-                </fieldset>
-            </form>
+                    </div>
+            </form> 
         </section>
 
-        <section class="content">
-
-                <div class="perfilUsuario">
-                    <div class="capa"></div>
-                    <div class="foto"></div>
-                    <div class="informacoes">
-                        <p>nomeUsuario</p>
-                        <p>formacaoAcademica</p>
-                        <p>numeroOAB</p>
-                        <a href="perfilAdvogado.html">Ver Perfil</a>
+    
+        <section class="sectionAreaDosPerfis">
+                <div class="retanguloDosPerfis1">
+                    <div class="fotoDeFundo">
+                        <div class="circuloFotoPerfil">
+                        
+                        </div>
+                    </div>
+                    
+                    <div class="informaçõesAdvogado">
+                        <p>Nome: Jose Augusto</p>
+                        <p>Idade: 32</p>
+                        <p>Especialidade: Direito Penal</p>
+                        <a href="perfilAdvogado.php">Ver Perfil</a>
                     </div>
                 </div>
-            
 
-        
+                <div class="retanguloDosPerfis2">
+                    <div class="fotoDeFundo">
+                    <div class="circuloFotoPerfil">
+                    
+                    </div>
+                    </div>
+                    
+                    <div class="informaçõesAdvogado">
+                        <p>Nome: Jose Augusto</p>
+                        <p>Idade: 32</p>
+                        <p>Especialidade: Direito Penal</p>
+                        <a href="perfilAdvogado.php">Ver Perfil</a>
+                    </div>
+                </div>
+
+                <div class="retanguloDosPerfis1">
+                    <div class="fotoDeFundo">
+                    <div class="circuloFotoPerfil">   
+                    
+                    </div>
+                    </div>
+                    
+                    <div class="informaçõesAdvogado">
+                        <p>Nome: Jose Augusto</p>
+                        <p>Idade: 32</p>
+                        <p>Especialidade: Direito Penal</p>
+                        <a href="perfilAdvogado.php">Ver Perfil</a>
+                    </div>
+                </div>
+
+                <div class="retanguloDosPerfis2">
+                    <div class="fotoDeFundo">
+                    <div class="circuloFotoPerfil">
+                        
+                        </div>
+                    </div>
+                    
+                    <div class="informaçõesAdvogado">
+                        <p>Nome: Jose Augusto</p>
+                        <p>Idade: 32</p>
+                        <p>Especialidade: Direito Penal</p>
+                        <a href="perfilAdvogado.php">Ver Perfil</a>
+                    </div>
+                </div>
         </section>
-    </main>
+    </main> 
 </body>
 </html>

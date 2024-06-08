@@ -1,155 +1,183 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
+*{
     padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box; /* Adicionado para lidar melhor com padding e margin */
+    font-family: Arial, Helvetica, sans-serif;
 }
-
-body {
-    background-color: #111130;
-}
-
-/* FILTRO */
-
-main {
-    display: flex;
-    width: 100%;
-    height: 785px;
-}
-
-main section.filtro-advogado {
-    width: 340px;
-    height: 100%;
+header{
     background-color: #0C0C24;
-    opacity: 0.8;
-}
-
-main section.filtro-advogado form {
-    padding: 20px 0;
-}
-
-main section.filtro-advogado form fieldset.filtro {
-    color: #fff;
-    border: none;
-}
-
-main section.filtro-advogado form fieldset.filtro legend{
-    text-align: center;
-    font-size: 32px;
-    margin: 20px 0;     
-}
-
-main section.filtro-advogado form fieldset.filtro div.localizacao {
-    display: block;
-    padding: 0 50px;
-}
-
-main section.filtro-advogado form fieldset.filtro div.raioDistancia{
-    display: inline-block;
-    margin: 10px 0;
-    padding: 0 50px;
-}
-
-main section.filtro-advogado form fieldset.filtro div.especialidade {
-    display: block;
-    padding: 0 50px;
-}
-
-main section.filtro-advogado form fieldset.filtro div.especialidade select{
-    width: 250px;
-}
-
-main section.filtro-advogado form fieldset.filtro div.honorario{
-    display: inline-block;
-    margin: 10px 0;
-    padding: 0 50px;
-}
-
-main section.filtro-advogado form fieldset.filtro div.consultaGratuita{
-    display: inline-block;
-    padding: 0 50px;
-}
-
-main section.filtro-advogado form fieldset.filtro div.enviar button{
-    display: block;
-    margin: 10px 50px;
-}
-
-input, select, button {
-    border-radius: 5px;
-    border: none;
-}
-
-input[type="search"] {
-    width: 250px;
-    height: 20px;
-}
-
-input[type="checkbox"] {
-    margin: 0 10px;
-}
-
-button[type="submit"] {
-    width: 250px;
-    height: 20px;
-    background-color: #3483FA;
-}
-
-label {
-    font-size: 20px;
-}
-
-/* PERFIL USUARIO */
-
-section.content {
+    height: 4rem;
     display: grid;
-    width: 100%;
-    margin: 30px 30px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+        "logo navs"
+    ;
+    text-align: end;
+    
 }
-
-section.content div.perfilUsuario {
-    position: relative;
-    width: 500px;
-    height: 300px;
-    box-shadow: 0 10px 10px 0 black;  
-    background-color: #001c1d;
+body{
+    background-color: #111130;
+    color: white;
 }
-
-section.content div.perfilUsuario div.capa {
-    position: absolute;
-    width: 100%;
-    height: 150px;
-    background-image: url("/public/img/capaPerfil1.jpeg");
-    background-size: cover;
-    box-shadow: 10px black;
+img {
+    height: 4rem;
+    grid-area: logo;
 }
-
-section.content div.perfilUsuario div.foto {
-    position: absolute;
-    top: 80px;
-    left: 30px;
-    width: 150px;
-    height: 150px;
-    border-radius: 100px;
-    background-image: url("/public/img/perfil1.png");
-    background-size: cover;
-}
-
-section.content div.perfilUsuario div.informacoes {
-    display: block;
-    position: absolute;
-    top: 165px;
-    left: 200px;
-}
-
-section.content div.perfilUsuario div.informacoes p {
-    font-size: 18px;
-    margin: 5px 0;
-    color: #fff;
-}
-
-section.content div.perfilUsuario div.informacoes a {
-    padding-left: 220px;
-    color: #3483FA;
+a{
+    color: white;
     text-decoration: none;
-    font-size: 18px;
+}
+a:hover{
+    color: blue;
+}
+.navs{
+    grid-area: navs;   
+    padding-right: 1%;
+}
+.nav2{
+    padding-top: 2% ;
+}
+main{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 25% 75%;
+    grid-template-areas: 
+        "campoDePesquisa areaDosPerfis"
+    ;
+    
+}
+.campoDePesquisa{
+    grid-area: campoDePesquisa;
+    text-align: left;
+    background-color: #0C0C24;
+    height: 35em;
+    width: 100%;
+    
+}
+input, select {
+    background-color: #D9D9D9;
+    border-radius: 1em;
+    height: 1.5em;
+
+}
+label{
+    padding-left: 2%;
+}
+.tituloFiltros{
+    text-align: center;
+    padding-top: 10%;
+}
+.divCampoLocalização{
+    margin-left: 4%;
+    width: 90%;
+}
+.labelLocalização{
+    margin-left: 3%;
+    
+}
+.divRadioDistancia{
+    padding-left: 7%;
+    padding-top: 5%;
+}
+.divEspecialidade{
+    padding-left: 7%;
+    padding-top: 5%;
+}
+.divHonorario{
+    padding-left: 7%;
+    padding-top: 5%;
+}
+.divConsultaGratuita{
+    display: flex;
+    padding-left: 7%;
+    padding-top: 4%;
+}
+input[type="checkbox"]{
+    margin-left: 6%;
+}
+.divBotaoEnviar{
+    padding-left: 12%;
+    padding-top: 10%;
+}
+button[type="submit"]{
+    background-color: #3483FA;
+    height: 2em;
+    width: 15em;
+    border-radius: 1em;
+    cursor: pointer;
+}
+form {
+    padding-top: 10%;
+}
+.sectionAreaDosPerfis{
+    grid-area: areaDosPerfis;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+}
+.filtros{
+    margin-top: 1.5em;
+}
+.retanguloDosPerfis1{
+    display: grid;
+    grid-template-columns: 40% 60%;
+  /*  grid-template-rows: 45% 55%;*/
+    grid-template-areas: 
+        "fotoDeFundo fotoDeFundo"
+        "circuloFotoPerfil informaçõesAdvogado"
+    ;
+    background-color: #001c1d;
+    height: 80%;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+    box-shadow: 0em 0.8em 1em 0em black;
+
+}
+.retanguloDosPerfis2{
+    display: grid;
+    grid-template-columns: 40% 60%;
+  /*  grid-template-rows: 45% 55%;*/
+    grid-template-areas: 
+        "fotoDeFundo fotoDeFundo"
+        "circuloFotoPerfil informaçõesAdvogado"
+    ;
+    background-color: #001c1d;
+    height: 80%;
+    width: 80%;
+    margin-left: 8%;
+    margin-top: 5%;
+    box-shadow: 0em 0.8em 1em 0em black;
+
+}
+.circuloFotoPerfil{
+    border-radius: 100%;
+    border: 1px solid black;
+    height: 7vw;
+    width: 7vw;
+    background-image: url('../img/perfil1.png');
+    background-size: cover;
+    background-position: center;
+    grid-area: circuloFotoPerfil;
+    z-index: 2;
+    margin-left: 10%;
+    margin-top: 17%;
+}
+.informaçõesAdvogado{
+    display: inline-block;
+    margin-bottom: 5%;
+    grid-area: informaçõesAdvogado;
+    text-align: left;
+    
+}
+.fotoDeFundo{
+    grid-area: fotoDeFundo;
+    background-image: url('../img/capaFundoPerfilAdvogado.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    height: 8vw;
 }

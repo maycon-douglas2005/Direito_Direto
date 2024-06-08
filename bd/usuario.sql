@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 05/06/2024 às 06:33
+-- Tempo de geração: 03/06/2024 às 22:53
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -50,8 +50,7 @@ CREATE TABLE `usuario` (
 --
 
 INSERT INTO `usuario` (`id_usuario`, `nome_completo`, `sexo`, `data_nascimento`, `celular`, `email`, `senha`, `modelo_consultoria`, `numero_oab`, `cep`, `rua`, `numero_casa`, `cidade`, `bairro`, `complemento`) VALUES
-(1, 'Maycon Douglas Alves Pereira Chaves', '', '2005-04-05', '(11) 98232-8950', 'mayconchaves2005@gmail.com', 'Crn7836ma-', '', '', '09273-085', 'Flor de Cactus', 0, 'Santo André', 'Jardim Alzira Franco', ''),
-(2, 'Edson Advogado Segundo', '', '1950-11-05', '4546456', 'edsonadvogado@gmail.com', 'edsoncalvo', '', '34564654', '76876-562', 'Rua dos Calvos', 12, 'Cidade dos Sem Cabelos', 'Jardim Calvo da Silva', 'Perto do bar chamado Calvo-Bar');
+(1, 'Maycon Douglas Alves Pereira Chaves', '', '2005-04-05', '(11) 98232-8950', 'mayconchaves2005@gmail.com', 'Crn7836ma-', '', '', '09273-085', 'Flor de Cactus', 0, 'Santo André', 'Jardim Alzira Franco', '');
 
 --
 -- Índices para tabelas despejadas
@@ -71,7 +70,7 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT de tabela `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
