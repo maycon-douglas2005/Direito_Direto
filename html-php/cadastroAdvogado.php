@@ -47,8 +47,8 @@
         </nav>
         <nav class="link2">
             <a href="../index.html">Página Inicial</a> |
-            <a href="">Busca</a> |
-            <a href="">Sobre</a>
+            <a href="loginCliente.html">Busca</a> |
+            <a href="../index.html">Sobre</a>
         </nav>
     </header>
     <main>
