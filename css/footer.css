@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    background-color: #0C0C24;
+    color: white;
+    padding: 20px;
+}
+
+footer div.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+}
+
+footer div.logo img{
+    width: 500px;
+    height: 250px;
+}
+
+footer div.contato {
+    width: 250px;
+    height: 150px;
+    margin: 0 50px;
+}
+
+footer div.contato h2{
+    margin-bottom: 20px;
+    font-size: 40px;
+}    
+
+footer div.contato div.informacoesContato strong{
+display: flex;
+margin: 10px 0 5px 0;
+}
+
+footer div.contato div.informacoesContato strong p{
+    display: flex;
+    margin-left: 5px;
+    }
+
+footer form {
+    height: auto;
+}
+
+footer form fieldset{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    border: none;
+    
+}
+
+footer form fieldset div.nomeeCidade, div.emaileTelefone {
+    display: flex;
+}
+
+div.cidade{
+    flex-grow: 1;
+}
+
+div.nome, div.email {
+    margin-right: 15px;
+}
+
+footer form fieldset legend{
+    font-size: 40px;
+}
+
+label {
+    padding: 10px 0 ;
+}
+
+input, textarea {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: #111130;
+    color: white;
+}
+
+input {
+    padding: 5px;
+    height: 25px;
+    font-size: 15px;
+}
+
+textarea {
+    height: 150px;
+    padding: 5px;
+    font-size: 15px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    height: 30px;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+}

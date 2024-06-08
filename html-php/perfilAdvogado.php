@@ -1,5 +1,5 @@
-<?php include("/include/formularioLoginAdvogado.php") ?>
 <?php include("/include/headerUsuarioLogado.php") ?>
+<?php include("/include/footer.php") ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="../css/cabecario.css"> 
     <link rel="stylesheet" href="../css/perfilAdvogado.css">
+    <link rel="stylesheet" href="../css/footer.css">
 
     <title>Direito Direto - Perfil</title>
 </head>

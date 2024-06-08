@@ -1,6 +1,6 @@
 <?php include("/include/verificacaoFisicaLogado.php") ?>
 <?php include("/include/headerUsuarioLogado.php") ?>
-
+<?php include("/include/footer.php") ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -11,11 +11,11 @@
     <!--Fonte de texto do site-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">    
 
     <!--CSS-->
     <link rel="stylesheet" href="../css/cabecario.css"> 
     <link rel="stylesheet" href="../css/pessoaFisicaLogado.css">
+    <link rel="stylesheet" href="../css/footer.css">
     
 
     <title>Home</title>

@@ -1,5 +1,6 @@
 <?php include("/include/formularioPessoaFisicaCadastro.php")?>
 <?php include("/include/header.php")?>
+<?php include("/include/footer.php") ?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -12,6 +13,7 @@
     
     <link rel="stylesheet" href="../css/cabecario.css"> 
     <link rel="stylesheet" href="../css/cadPessoaFisica.css">
+    <link rel="stylesheet" href="../css/footer.css">
  
 </head>
 <body>
