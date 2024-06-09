@@ -1,17 +1,17 @@
 <footer>
     <div class="logo">
-        <img src="/img/logo.png" alt="Direito Direto">
+        <img src="../img/logo.png" alt="Direito Direto">
     </div>
 
     <div class="contato">
         <h2>Contato</h2>
         <div class="informacoesContato">
-            <strong>Email: <p>direitoDireito@email.com</p></strong>
+            <strong>Email: direitoDireito@email.com</strong>
             <strong>Redes Sociais: </strong>
             <div class="redesSociais">
-                <img src="/img/instagram.png" alt="instagram">
-                <img src="/img/facebook.png" alt="facebook">
-                <img src="/img/linkedin.png" alt="linkedin">
+                <img src="../img/instagram.png" alt="instagram">
+                <img src="../img/facebook.png" alt="facebook">
+                <img src="../img/linkedin.png" alt="linkedin">
             </div>
         </div>
     </div>

@@ -1,6 +1,4 @@
-<?php include("/include/verificacaoFisicaLogado.php") ?>
-<?php include("/include/headerUsuarioLogado.php") ?>
-<?php include("/include/footer.php") ?>
+<?php include '/include/verificacaoFisicaLogado.php'?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -11,33 +9,17 @@
     <!--Fonte de texto do site-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">    
 
     <!--CSS-->
     <link rel="stylesheet" href="../css/cabecario.css"> 
     <link rel="stylesheet" href="../css/pessoaFisicaLogado.css">
-    <link rel="stylesheet" href="../css/footer.css">
     
 
     <title>Home</title>
 </head>
 <body>
-    <header>
-        <img src="../img/logo_direitoDireto.png" alt="Logo">
-
-        <div class="navs"> 
-            <nav >
-                    <a href="../bd/encerrarSessaoCliente.php">Sair</a>
-            </nav>
-
-            <nav class="nav2">
-            
-                    <a href="../index.html">Página Inicial |</a>
-                    <a href="http://">Busca |</a>
-                    <a href="http://">Sobre</a>
-                
-            </nav>
-        </div>      
-    </header>
+    <?php include '/include/headerUsuarioLogado.php'?>
 
     <main>
 
@@ -169,5 +151,7 @@
                 </div>
         </section>
     </main> 
+    
+    <?php include '/include/footer.php'?>
 </body>
 </html>

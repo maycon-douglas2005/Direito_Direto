@@ -1,6 +1,3 @@
-<?php include("/include/header.php") ?>
-<?php include("/include/footer.php") ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,12 +7,14 @@
 
     <title>Página Inicial</title>
 
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/cabecario.css">
     <link rel="stylesheet" href="../css/footer.css">
     
 </head>
 <body>
+    <?php include '../include/header.php'?> 
+       
     <main>
         <article>
             <h1>Seja Bem Vindo!</h1>
@@ -28,7 +27,7 @@
                 Se <a class="seCadastre" href="html-php/comoVoceSeIdentificaCadastro.html">cadastre</a>  em nosso site!</p>
         </article>
             <div class="imagemCentral">
-                <img class="imagemCentral" src="img/direitoDireto.png" alt="Imagem não encontrada">
+                <img class="imagemCentral" src="../img/direitoDireto.png" alt="Imagem não encontrada">
                 <div class="divRealizarBusca">
                     <h2>Deseja realizar uma busca?</h2>
                     <a class="divCliqueAqui" href="html-php/loginCliente.html">Clique Aqui</a>
@@ -36,5 +35,6 @@
             </div>
             
     </main>
+    <?php include '../include/footer.php' ?>
 </body>
 </html>

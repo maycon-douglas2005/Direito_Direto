@@ -1,5 +1,5 @@
 <header>
-    <img id="logo" src="/public/img/logo_direitoDireto.png" alt="Logo">
+    <img id="logo" src="../img/logo_direitoDireto.png" alt="Logo">
 
     <div class="menu">
         <nav id="registroLogin">

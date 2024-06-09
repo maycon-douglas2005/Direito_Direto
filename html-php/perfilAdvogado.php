@@ -1,6 +1,4 @@
-<?php include("/include/headerUsuarioLogado.php") ?>
-<?php include("/include/footer.php") ?>
-
+<?php include '/include/formularioLoginAdvogado.php'?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,11 +7,11 @@
 
     <link rel="stylesheet" href="../css/cabecario.css"> 
     <link rel="stylesheet" href="../css/perfilAdvogado.css">
-    <link rel="stylesheet" href="../css/footer.css">
 
     <title>Direito Direto - Perfil</title>
 </head>
 <body>
+    <?php include '/include/headerUsuarioLogado.php'?>
 
     <section class="perfilAdvogado">
         <div class="capaFundo"></div>
@@ -35,5 +33,7 @@
 
     <section class="resumoProfissional"></section>
     <section class="avaliacoes"></section>
+
+    <?php include '../include/footer.php' ?>
 </body>
 </html>

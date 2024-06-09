@@ -47,7 +47,7 @@ h1 {
     grid-area: titulo;
     font-size: 3em;
 }
-p{
+main article p{
     padding-top: 11%;
     padding-left: 21%;
     grid-area: p1;

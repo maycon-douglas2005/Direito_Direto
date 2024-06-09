@@ -1,6 +1,4 @@
-<?php include("/include/formularioPessoaFisicaCadastro.php")?>
-<?php include("/include/header.php")?>
-<?php include("/include/footer.php") ?>
+<?php include '/include/formularioPessoaFisicaCadastro.php'?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -13,10 +11,11 @@
     
     <link rel="stylesheet" href="../css/cabecario.css"> 
     <link rel="stylesheet" href="../css/cadPessoaFisica.css">
-    <link rel="stylesheet" href="../css/footer.css">
  
 </head>
 <body>
+    <?php include '/include/header.php'?>
+
     <main>
         <div class="retangulo">
             <h1 class="titulo">Preencha Seus Dados</h1>
