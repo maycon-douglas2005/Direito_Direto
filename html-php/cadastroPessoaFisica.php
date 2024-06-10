@@ -1,54 +1,21 @@
-<?php
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        include_once('../bd/config.php');
+<?php include '/include/formularioPessoaFisicaCadastro.php'?>
 
-        $nome = isset($_POST['nomeCompletoCliente']) ? mysqli_real_escape_string($conexao, $_POST['nomeCompletoCliente']) : '';
-        $sexo = isset($_POST['sexoDoCliente']) ? mysqli_real_escape_string($conexao, $_POST['sexoDoCliente']) : '';
-        $dataNasci = isset($_POST['dataNasciCliente']) ? mysqli_real_escape_string($conexao,$_POST['dataNasciCliente']) : '';
-        $celular = isset($_POST['celularCliente']) ? mysqli_real_escape_string($conexao,$_POST['celularCliente']) : '';
-        $email = isset($_POST['emailCliente']) ? mysqli_real_escape_string($conexao,$_POST['emailCliente']) : '';
-        $senha = isset($_POST['senhaCliente']) ? mysqli_real_escape_string($conexao,$_POST['senhaCliente']) : '';
-        $modeloConsultorio = '';
-        $numeroOAB = '';
-        $cep = isset($_POST['cepCliente']) ? mysqli_real_escape_string($conexao,$_POST['cepCliente']) : '';
-        $rua = isset($_POST['ruaCliente']) ? mysqli_real_escape_string($conexao,$_POST['ruaCliente']) : '';
-        $numerocasa = isset($_POST['numeroCasaCliente']) ? mysqli_real_escape_string($conexao,$_POST['numeroCasaCliente']) : '';
-        $cidade = isset($_POST['cidadeCliente']) ? mysqli_real_escape_string($conexao,$_POST['cidadeCliente']) : '';
-        $bairro = isset($_POST['bairroCliente']) ? mysqli_real_escape_string($conexao,$_POST['bairroCliente']) : '';
-        $complemento = isset($_POST['complementoCasaCliente']) ? mysqli_real_escape_string($conexao,$_POST['complementoCasaCliente']) : '';
-    
-        $stmt = $conexao->prepare("INSERT INTO usuario(nome_completo, sexo, data_nascimento, celular, email, senha, modelo_consultoria, numero_oab, cep, rua, numero_casa, cidade, bairro, complemento) 
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
-        $stmt->bind_param("ssssssssssssss", $nome, $sexo, $dataNasci, $celular, $email, $senha, $modeloConsultorio, $numeroOAB, $cep, $rua, $numerocasa, $cidade, $bairro, $complemento);
-    
-        $stmt->execute();
-
-        header('Location: loginCliente.html');
-    }
-?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Cadastro do Cliente</title>
+    
+    <link rel="stylesheet" href="../css/cabecario.css"> 
     <link rel="stylesheet" href="../css/cadPessoaFisica.css">
+ 
 </head>
 <body>
-<header>
-        <img src="../img/logo.png" alt="Logo da Empresa">
+    <?php include '/include/header.php'?>
 
-        <nav class="link1">
-            <a href="comoVoceSeIdentificaCadastro.html">Cadastrar-se</a> |
-            <a href="comoVoceSeIdentificaLogin.html">Login</a>
-        </nav>
-        <nav class="link2">
-            <a href="../index.html">Página Inicial</a> |
-            <a href="loginCliente.html">Busca</a> |
-            <a href="../index.html">Sobre</a>
-        </nav>
-    </header>
     <main>
         <div class="retangulo">
             <h1 class="titulo">Preencha Seus Dados</h1>

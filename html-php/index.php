@@ -4,23 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Página Inicial</title>
-    <link rel="stylesheet" href="css/index.css">
+
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/cabecario.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    
 </head>
 <body>
-    <header>
-        <img class="logo" src="img/logo.png" alt="Logo">
-
-        <nav class="link1">
-            <a href="html-php/comoVoceSeIdentificaCadastro.html">Cadastrar-se | </a>
-            <a href="html-php/comoVoceSeIdentificaLogin.html">Login</a>
-        </nav>
-        <nav class="link2">
-            <a href="index.html">Página Inicial | </a>
-            <a href="html-php/pessoaFisicaLogado.php">Busca | </a>
-            <a href="">Sobre</a>
-        </nav>
-    </header>
+    <?php include '../include/header.php'?> 
+       
     <main>
         <article>
             <h1>Seja Bem Vindo!</h1>
@@ -33,7 +27,7 @@
                 Se <a class="seCadastre" href="html-php/comoVoceSeIdentificaCadastro.html">cadastre</a>  em nosso site!</p>
         </article>
             <div class="imagemCentral">
-                <img class="imagemCentral" src="img/direitoDireto.png" alt="Imagem não encontrada">
+                <img class="imagemCentral" src="../img/direitoDireto.png" alt="Imagem não encontrada">
                 <div class="divRealizarBusca">
                     <h2>Deseja realizar uma busca?</h2>
                     <a class="divCliqueAqui" href="html-php/loginCliente.html">Clique Aqui</a>
@@ -41,5 +35,6 @@
             </div>
             
     </main>
+    <?php include '../include/footer.php' ?>
 </body>
 </html>

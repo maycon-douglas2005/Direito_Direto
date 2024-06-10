@@ -1,12 +1,5 @@
-<?php
-    session_start();
-    if((!isset($_SESSION['emailCliente']) == true) and (!isset($_SESSION['senhaCliente']) == true)) {
-        unset($_SESSION['emailCliente']);
-        unset($_SESSION['senhaCliente']);
-        header('Location: loginCliente.html');
-    }
-    $logado = $_SESSION['emailCliente'];    
-?>
+<?php include '/include/verificacaoFisicaLogado.php'?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,32 +12,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">    
 
     <!--CSS-->
+    <link rel="stylesheet" href="../css/cabecario.css"> 
     <link rel="stylesheet" href="../css/pessoaFisicaLogado.css">
+    
 
     <title>Home</title>
 </head>
 <body>
-    <header>
-        <img src="../img/logo_direitoDireto.png" alt="Logo">
-
-        <div class="navs"> 
-            <nav >
-            
-                    <a href="comoVoceSeIdentificaCadastro.html">Cadastrar-se |</a>
-                    <a href="comoVoceSeIdentificaLogin.html">Login |</a>
-                    <a href="../bd/encerrarSessaoCliente.php">Sair</a>
-                
-            </nav>
-
-            <nav class="nav2">
-            
-                    <a href="../index.html">Página Inicial |</a>
-                    <a href="http://">Busca |</a>
-                    <a href="http://">Sobre</a>
-                
-            </nav>
-        </div>      
-    </header>
+    <?php include '/include/headerUsuarioLogado.php'?>
 
     <main>
 
@@ -176,5 +151,7 @@
                 </div>
         </section>
     </main> 
+    
+    <?php include '/include/footer.php'?>
 </body>
 </html>

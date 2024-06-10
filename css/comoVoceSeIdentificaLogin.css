@@ -1,38 +1,10 @@
-html{
-    font-family: Arial, Helvetica, sans-serif;
-}
-header{
-    display: grid;
-    background-color: #0C0C24;
-    height: 65px;
-    grid-template-columns: 79% 20% ;
-    grid-template-rows: 50% 45%;
-    text-align: end;
-    grid-template-areas: 
-        "logo link1"
-        "nada link2"
-    ;
-}
 body{
    
     margin: 0px;
     background-color: #111130;
     color: white;
 }
-.logo {
-    grid-area: logo;
-    position: relative;
-    height: 4em;
-    padding: 0px;
-}
-.link1{
-    grid-area: link1;
-    position: relative;
-}
-.link2{
-    grid-area: link2;
-    position: relative;
-}
+
 a{
     color: white;
     text-decoration: none;
