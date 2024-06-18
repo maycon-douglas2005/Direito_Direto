@@ -1,0 +1,101 @@
+html {
+    height: 100%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    padding: 0%;
+    margin: 0%;
+    height: 100%;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+main{
+    background-color: #111130;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 60% 20%;
+    grid-template-rows: 8% 90%;
+    grid-template-areas: 
+        "espaço1 espaço2 espaço3"
+        "espaço4 article espaço6"
+    ;
+}
+article{
+    grid-area: article;
+    background-color: #0C0C24;
+    width: 70%;
+    height: 85%;
+    color: white;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 17% 30% 30% 30% 30%;
+    grid-template-areas: 
+        "titulo"
+        "subtitulo"
+        "email"
+        "senha"
+        "lembrarMe"
+        "botaoEnviar"
+    ;
+    
+}
+h1{
+    font-size: 2.3em;
+    grid-area: titulo;
+}
+h2{
+    font-size: 1.3em;
+    grid-area: subtitulo;
+    padding-top: 2%;
+}
+form{
+    text-align: left;
+    padding-left: 10%;
+    
+}
+label{
+    font-size: 1.3sem;
+}
+input {
+    padding: 1.5%;
+    background-color: rgba(169, 169, 169, 0.959);
+    
+}
+.lembrarMe{
+    padding-top: 3%;
+    grid-area: lembrarMe;
+}
+.divBotaoEnviar{
+    padding-top: 8%;
+    padding-right: 10%;
+    grid-area: botaoEnviar;
+}
+.senha{
+    padding-top: 3%;
+    width: 92%;
+    grid-area: senha;
+    
+}
+.botaoEnviar{
+    width: 100%;
+    background-color: rgba(0, 128, 0, 0.712);
+    height: 3em;
+    cursor: pointer;
+    font-size: 1em;
+    border:  rgba(0, 128, 0, 0.712);
+    color: white;
+}
+.botaoEnviar:hover{
+    background-color: green;
+}
+.email{
+    grid-area: email;
+    width: 92%;
+    padding-top: 3%;
+}
