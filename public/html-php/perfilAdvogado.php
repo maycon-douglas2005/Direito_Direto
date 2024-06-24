@@ -22,7 +22,7 @@
 </head>
 <body>
     
-    <?php include('../include/header.php');?>
+    <?php include('../include/headerUsuarioLogado.php');?>
     
     <section class="seçãoPerfilAdvogado">
         <div class="capaFundo">
@@ -48,15 +48,40 @@
         
         <div class="resumoProfissional">
             <h2>Resumo Profissional</h2>
-            <div class="bordaResumoProfissional">
+            <div class="bordaResumoProfissional"><!--
                 <p class="paragrafoResumoProfissional">Eu me chamo Jose Augusto, possuo 32 anos. Trabalho 
                     como advogado a 7 anos, e minhas especialidades são Criminal, 
                     Trabalhista e Civil.
-                </p>
+                </p>-->
             </div>           
-        </div>          
+        </div>    
+        
+        <div class="servicosOferecidos">
+            <h2>Serviços Oferecidos</h2>
+            <div class="bordaServicosOferecidos">
+                <div class="btn botao1">
+                    <!--<strong><span>Direito Criminal</span></strong>-->
+                </div>
+                <div class="btn botao2">
+                    <!--<strong><span>Direto Civil</span></strong>-->
+                </div>
+                <div class="btn botao3">
+                    <!--<strong><span>Direito Trabalhista</span></strong>-->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sectionAvaliacoes">
+        <h2>Avaliações</h2>
+        <div class="cabecalhoPerfil">
+            <div class="fotoPerfilAvaliacao"></div>
+            <h4>Jose Da Silva Santos</h4>
+        </div>
+        <div class="caixaTexto">
+            
+        </div>
     </section>
     <?php include('../include/footer.php');?>
-    
 </body>
 </html>

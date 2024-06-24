@@ -6,7 +6,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 .seçãoPerfilAdvogado{
-    background-color: #111130;
+    background-color: #0C0C24;
     height: 24em;
     width: 100%;
     
@@ -54,15 +54,18 @@ section div .feedbackVisual{
     margin-right: 2%;
 }
 .seçãoResumoProfissional{
-    height: 20em;
+    height: 25em;
     width: 100%;
     display: grid;
-    grid-template-columns: 50% 50%;
-    background-color: #0C0C24; 
+    grid-template-columns: 1fr 1fr;
+    background-color: #111130; 
 }
 section .resumoProfissional {
-    margin-left: 5%;
-    margin-bottom: 5%;
+    width: 40vw;
+    height: 38vh;
+    justify-self: center;
+    margin-top: 7%;
+    
 
 }
 section .bordaResumoProfissional{
@@ -79,4 +82,99 @@ section div .paragrafoResumoProfissional{
 .resumoProfissional h2 {
     margin-top: 7%;
     margin-left: 2%;
+}
+.seçãoResumoProfissional .servicosOferecidos{
+    align-self: center;
+    height: 39vh;
+    justify-self: center;
+    
+}
+.seçãoResumoProfissional .servicosOferecidos .bordaServicosOferecidos{
+    height: 80%;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 2%;
+    display: grid;
+    grid-template-areas: 
+        "btn1"
+        "btn2"
+        "btn3"
+    ;
+    grid-auto-rows: 20%;
+    row-gap: 10px;
+}
+.btn{
+    border: 1px solid white;
+    border-radius: 1em;
+    text-align: center;
+}
+.botao1{
+    grid-area: btn1;
+}
+.botao2{
+    grid-area: btn2;
+}
+.botao3{
+    grid-area: btn3;
+}
+.seçãoResumoProfissional .servicosOferecidos .bordaServicosOferecidos span{
+    display: inline-block;
+    margin-top: 6%;
+}
+
+.sectionAvaliacoes{
+    background-color: #0C0C24;
+    height: 75vh;
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+        "titulo"
+        "cabecalhoPerfil"
+        "texto"
+    ;
+    grid-template-rows: 25% 10%;
+    
+}
+.sectionAvaliacoes h2{
+    grid-area: titulo;
+    justify-self: center;
+    width: 20%;
+    height: 20%;
+    text-align: center;
+    margin-top: 2%;
+}
+.cabecalhoPerfil{
+    grid-area: cabecalhoPerfil;
+    display: grid;
+    grid-template-columns: 10% 90%;
+    grid-template-areas: 
+        "foto nome"
+    ;
+    width: 100%;
+    height: 50%;
+    margin-left: 5%;
+}
+.sectionAvaliacoes .cabecalhoPerfil .fotoPerfilAvaliacao{
+    background-image: url('../img/perfilAvaliações.jpg');
+    height: 10vh;
+    width: 8vw;
+    border-radius: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: foto;   
+}
+.sectionAvaliacoes .cabecalhoPerfil h4{
+    grid-area: nome;
+    height: 30%;
+    width: 15%;
+    margin-top: 1%;
+}
+.sectionAvaliacoes .caixaTexto{
+    grid-area: texto;
+    border: 1px solid white;
+    width: 70%;
+    justify-self: center;
+    height: 80%;
+    border-radius: 1em;
 }

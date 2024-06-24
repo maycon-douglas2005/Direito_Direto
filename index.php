@@ -20,7 +20,7 @@
             <ul>
                 <a href="public/html-php/comoVoceSeIdentificaCadastro.php"><li>Cadastrar-se</li></a>
                 <span> | </span>
-                <a href="public/html-php/comoVoceSeIdentificaLogin.php"><li>Entrar</li></a>
+                <a href="public/html-php/comoVoceSeIdentificaLogin.php"><li>Login</li></a>
             </ul>
         </nav>
         
