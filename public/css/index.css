@@ -1,163 +1,258 @@
-html {
-    height: 100%;
-    font-family: Arial, Helvetica, sans-serif;
+html, body {
+    width: 100%;
 }
 
-body{
-    padding: 0%;
-    margin: 0%;
+main section.boasVindas {
+    display: flex;
     background-color: #111130;
-    height: 100%;
-}
-a{
     color: white;
+}
+
+main section.boasVindas div.sobreoSite{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 100px 40px;
+    width: 37%;
+    height: 400px;
+}
+
+main section.boasVindas div.sobreoSite h1{
+    font-size: 64px;
+}
+
+main section.boasVindas div.sobreoSite p{
+    font-size: 18px;
+    margin: 10px 0;
+    overflow-wrap: break-word;
+}
+
+main section.boasVindas div.sobreoSite a{
     text-decoration: none;
+    color: #0066FF;
 }
-main {
-    display: grid;
-    height: 100%;
-    grid-template-columns: 50% 50%;
-    grid-template-areas: 
-        "article imagemCentral"
-    ;
-    width: 100%;
-}
-.imagemCentral{
-    grid-area: imagemCentral;
-    height: 100%;
-    width: 100%;
-    position: relative;
-}
-article{
-    grid-area: article;
-    display: grid;
-    color: white;
-    text-align: center;
-    grid-template-rows: 20% 80%;
-    grid-template-areas: 
-        "titulo"
-        "p1"
-    ;
-}
-h1 {
-    padding-top: 1.1em;
-    grid-area: titulo;
-    font-size: 3em;
-    color: white;
-}
-p{
-    padding-top: 11%;
-    padding-left: 21%;
-    grid-area: p1;
-    text-align: left;
-    font-size: 1.3em;
-}
-.seCadastre{
-    color: aqua;
-}
-.divRealizarBusca{
-    background-color: #25283d79;
-    color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 10%;
-    width: 70%;
-    height: 30%;
-    text-align: center;
-    
-}
-h2 {
-    font-size: 1.8em;
-}
-.divCliqueAqui{
-    background-color: #3483FA;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    height: 25%;
-    width: 60%;
-    left: 50%;
-    top: 59%;
-    border-radius: 2em;
+
+main section.boasVindas div.busca{
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    font-size: 1.7em;
+    background-image: url('../img/direitoDireto.png');
+    background-size: cover;
+    object-fit: cover;
+    width: 63%;
+    height: 600px;
 }
-.divCliqueAqui:hover{
-    background-color: rgb(7, 206, 7);
-}
-.sectionPqUsarNossoSite{
-    background-color: #0C0C24;
-    height: 137%;
-    width: 100%;
-    color: white;
-    
 
+main section.boasVindas div.busca span{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(37, 40, 61, 0.5);
+    width: 450px;
+    height: 150px;
+    border-radius: 10px;
+    margin: 10px;
 }
-.pqUsarNossoSiteTitulo{
-    text-align: center;
+
+main section.boasVindas div.busca span p{
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+main section.boasVindas div.busca span a{
+    font-size: 32px;
+    font-weight: bold;
+    background-color: #0066FF;
+    color: white;
+    padding: 5px 65px;
+    border-radius: 100px;
+    text-decoration: none;
+}
+
+/* SECTION NOSSO SITE */
+
+
+main section.nossoSite {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
+    height: auto;
+    background-color: #07091B;
 }
-.retangulozinhos1{
-    background-color: #111130;
-    height: 90%;
-    width: 80%;
-    border-radius: 1em;
-    margin-left: 4em;
-    text-align: center;
-    margin-top:10% 
+
+main section.nossoSite h2 {
+    font-size: 36px;
+    padding: 10px 0;
+    color: white;
 }
-.retangulozinhos2{
-    background-color: #111130;
-    height: 90%;
-    width: 80%;
-    border-radius: 1em;
-    margin-left: 4em;
-    text-align: center;
-    margin-top: 05%
-}
-.retangulozinhos3{
-    background-color: #111130;
-    height: 90%;
-    width: 80%;
-    border-radius: 1em;
-    margin-left: 4em;
-    text-align: center;
-    margin-top:10%
-}
-.retangulozinhos4{
-    background-color: #111130;
-    height: 90%;
-    width: 80%;
-    border-radius: 1em;
-    margin-left: 4em;
-    text-align: center;
-    margin-top: 05%
-}
-.linha1{
-    display: inline;
-    
-}
-.linha2 {
-    display: inline;
-}
-.linhas{ 
+
+main section.nossoSite div.cards {
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 55% 100%;
-    grid-template-areas: 
-        "linhas1 linhas2"
-        "linhas1 linhas2"
-    ;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 20px;
+    width: 1100px;
+    max-width: 100%;
+    color: white;
+    padding: 0 30px 15px 0;
 }
-h2{
-    padding-top: 5%;
+
+main section.nossoSite div.cards div.card1, div.card2, div.card3, div.card4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    background-color: #111130;
+    box-shadow: 10px 10px 5px rgb(0, 0, 0);
+    border-radius: 20px;
+    margin: 30px 0 30px 0;
+    padding: 0 0 10px 0;
 }
-.texto{
-    text-align: left;
-    margin-left: 20%;
-    margin-top: 8%;
+
+span.title{
+    font-weight: bold;
+    font-size: 24px;
+    padding: 10px 0;
+}
+
+main section.nossoSite div.cards p {
+    font-size: 20px;
+    margin: 15px 25px;
+}
+
+/* SECTION DUVIDAS FREQUENTES */
+
+main section.perguntasFrequentes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: #111130;
+    color: #fff;
+    padding: 20px 0;
+}
+
+main section.perguntasFrequentes ion-icon {
+    font-size: 24px;
+    color: #fff;
+}
+
+main section.perguntasFrequentes h3{
+    font-size: 36px;
+    font-weight: bold;
+}
+
+main section.perguntasFrequentes div.duvida1,
+main section.perguntasFrequentes div.duvida2,
+main section.perguntasFrequentes div.duvida3,
+main section.perguntasFrequentes div.duvida4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    margin: 5px 0;
+}
+
+div.duvida1, div.duvida2, div.duvida3 {
+    border-bottom: 1px solid #fff;
+}
+
+main section.perguntasFrequentes div.duvida1, div.duvida2, div.duvida3, div.duvida4 p{
+    font-size: 24px;
+    padding: 10px 0;
+}
+
+.conteudo {
+    display: flex;
+    align-items: center;
+}
+
+/****************************** MEDIA QUERY ******************************/
+@media screen and (max-width: 990px) {
+    main section.boasVindas {
+        display: flex;
+        flex-direction: column;
+        background-color: #111130;
+        color: white;
+        width: 100%;
+    }
+
+    main section.boasVindas div.sobreoSite{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 40px 0px;
+        padding: 0 20px;
+        width: 100%;
+        height: auto;
+    }
+
+    main section.boasVindas div.busca{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url('../img/direitoDireto.png');
+        background-size: cover;
+        object-fit: cover;
+        width: 100%;
+        height: 600px;
+    }
+
+    main section.boasVindas div.sobreoSite h1{
+        margin: 20px 0 20px 0;
+    }
+
+    main section.boasVindas div.sobreoSite p{
+        text-align: center;
+        font-size: 18px;
+        margin: 10px 0;
+        overflow-wrap: break-word;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    main section.nossoSite div.cards {
+        display: flex;
+        flex-direction: column;
+        width: 1100px;
+        max-width: 100%;
+        color: white;
+        padding: 0 100px 30px 100px;
+    }
+
+    main section.nossoSite div.cards div.card1, div.card2, div.card3, div.card4{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 420px;
+        height: auto;
+        background-color: #111130;
+        box-shadow: 10px 10px 5px rgb(0, 0, 0);
+        border-radius: 20px;
+        margin: 20px 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    main section.perguntasFrequentes h3{
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    main section.perguntasFrequentes ion-icon {
+        font-size: 16px;
+        color: #fff;
+    }
+
+    main section.perguntasFrequentes div.duvida1, div.duvida2, div.duvida3, div.duvida4 p{
+        font-size: 16px;
+        padding: 10px 0;
+    }
 }

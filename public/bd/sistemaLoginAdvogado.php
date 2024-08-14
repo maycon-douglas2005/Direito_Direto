@@ -10,10 +10,10 @@ session_start();
     if(mysqli_num_rows($result) == 0){
         unset($_SESSION['emailAdvogado']);
         unset($_SESSION['senhaAdvogado']);
-        header('Location: ../html-php/loginAdvogado.php');
+        header('Location: ../html-php/login/loginAdvogado.php');
     } else {
         $_SESSION['emailAdvogado'] = $email1;
         $_SESSION['senhaAdvogado'] = $senha1;
-        header('Location: ../html-php/perfilAdvogado.php');
+        header('Location: ../html-php/paginas_de_acesso_do_advogado/perfilAdvogado.php');
     }
 ?>

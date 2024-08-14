@@ -39,7 +39,7 @@
 </head>
 
 <body>
-    <?php include('../include/header.php');?>
+    <?php include('../include/header.html');?>
     <main>
         <div class="retangulo">
             <h1 class="titulo">Preencha Seus Dados</h1>

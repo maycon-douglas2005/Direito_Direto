@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../css/cadRealizadoSucesso.css">
 </head>
 <body>
-    <?php include('../include/header.php'); ?>
+    <?php include('../include/header.html'); ?>
     <section>
         <h1>Cadastro Realizado!</h1>
         <h3>Estamos te redirecionando, por favor aguarde.</h3>

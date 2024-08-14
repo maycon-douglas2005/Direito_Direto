@@ -3,7 +3,7 @@
     if((!isset($_SESSION['emailCliente']) == true) and (!isset($_SESSION['senhaCliente']) == true)) {
         unset($_SESSION['emailCliente']);
         unset($_SESSION['senhaCliente']);
-        header('Location: loginCliente.html');
+        header('Location: ../login/loginCliente.php');
     }
     $logado = $_SESSION['emailCliente'];    
 ?>
@@ -19,13 +19,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">    
 
     <!--CSS-->
-    <link rel="stylesheet" href="../css/pessoaFisicaLogado.css">
-    <link rel="stylesheet" href="../css/cabecario.css">
+    <link rel="stylesheet" href="../../css/pessoaFisicaLogado.css">
+    <link rel="stylesheet" href="../../css/cabecario.css">
 
     <title>Home</title>
 </head>
 <body>
-    <?php include('../include/headerUsuarioLogado.php');?>
+    <?php include('../../include/headerUsuarioEadvogadoLogado.php');?>
 
     <main>
 
@@ -107,7 +107,7 @@
                         <p>Nome: Jose Augusto</p>
                         <p>Idade: 32</p>
                         <p>Especialidade: Direito Penal</p>
-                        <a href="perfilAdvogado.php">Ver Perfil</a>
+                        <a href="../paginas_de_acesso_do_advogado/perfilAdvogado.php">Ver Perfil</a>
                     </div>
                 </div>
 

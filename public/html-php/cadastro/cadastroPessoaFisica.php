@@ -1,6 +1,6 @@
 <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        include_once('../bd/config.php');
+        include_once('../../bd/config.php');
 
         $nome = isset($_POST['nomeCompletoCliente']) ? mysqli_real_escape_string($conexao, $_POST['nomeCompletoCliente']) : '';
         $sexo = isset($_POST['sexoDoCliente']) ? mysqli_real_escape_string($conexao, $_POST['sexoDoCliente']) : '';
@@ -23,7 +23,7 @@
     
         $stmt->execute();
 
-        header('Location: loginCliente.php');
+        header('Location: ../login/loginCliente.php');
     }
 ?>
 <!DOCTYPE html>
@@ -33,11 +33,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro do Cliente</title>
-    <link rel="stylesheet" href="../css/cadPessoaFisica.css">
-    <link rel="stylesheet" href="../css/cabecario.css">
+    <link rel="stylesheet" href="../../css/cadPessoaFisica.css">
+    <link rel="stylesheet" href="../../css/cabecario.css">
 </head>
 <body>
-    <?php include('../include/header.php');?>
+    <?php include('../../include/header.html');?>
     <main>
         <div class="retangulo">
             <h1 class="titulo">Preencha Seus Dados</h1>

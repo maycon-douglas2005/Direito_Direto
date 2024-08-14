@@ -22,7 +22,7 @@
 </head>
 <body>
     
-    <?php include('../include/headerUsuarioLogado.php');?>
+    <?php include('../include/headerUsuarioEadvogadoLogado.php');?>
     
     <section class="seçãoPerfilAdvogado">
         <div class="capaFundo">

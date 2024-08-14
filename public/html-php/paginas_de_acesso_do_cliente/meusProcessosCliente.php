@@ -10,7 +10,7 @@
 
 </head>
 <body>
-    <?php include('../include/header.php'); ?>
+    <?php include('../include/header.html'); ?>
     <section>
         <h1>Meus Processos</h1>
         <div class="processos">
