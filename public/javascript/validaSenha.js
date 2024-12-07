@@ -13,21 +13,21 @@ senhaNova.addEventListener('keyup', () => {
 
     // verifica se o tamanho da senha é maior ou igual a 8
     if (senha.length >= 8) {
-        minimo.style.color = "green";
+        minimo.style.color = "#2bb32b";
     } else {
         minimo.style.color = "gray";
     }
 
     // verifica se o primeiro digito é maiuscula
     if (senha.length > 0 && senha[0] === senha[0].toUpperCase() && isNaN(senha[0])) {
-        maiusculo.style.color = "green";
+        maiusculo.style.color = "#2bb32b";
     } else {
         maiusculo.style.color = "gray";
     }
 
     // verifica se possui caractere especial
     if (caracteresEspeciais.test(senha)) {
-        caractere.style.color = "green";
+        caractere.style.color = "#2bb32b";
     } else {
         caractere.style.color = "gray";
     }
@@ -36,7 +36,7 @@ senhaNova.addEventListener('keyup', () => {
 
 button.addEventListener('click', () => {
     if(senhaNova.value === repetirSenha.value){
-        window.location.href = 'senhaAlterada.html';
+        window.location.href = 'senhaAlterada.php';
         console.log("senha valida")
     } else {
         let errorMessage = document.createElement("strong");

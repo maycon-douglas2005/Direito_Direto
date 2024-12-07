@@ -16,7 +16,7 @@ main {
 
 section {
     background-color: #0C0C24;
-    width: 650px;
+    width: 450px;
     height: auto;
     padding: 20px 30px;
     margin: 20px;
@@ -28,51 +28,117 @@ section form fieldset {
 }
 
 section form fieldset legend {
-    font-size: 40px;
+    font-size: 24px;
     text-align: center;
     margin-bottom: 10px;
 }
 
 section form fieldset div.senhaNova {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 section form fieldset div.requisitosSenha {
     margin: 0 0 10px 10px;
 }
 
+section form fieldset div.repetirSenha {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 section form fieldset div.repetirSenha input {
     margin-bottom: 30px;
 }
 
-legend, label{
+legend{
+    font-size: 24px;
+    color: white;
+}
+
+label {
+    font-size: 18px;
     color: white;
 }
 
 input[type="password"] {
     width: 100%;
-    height: 45px;
+    height: 35px;
     padding-left: 5px;
     margin: 10px 0 10px 0;
 }
 
 button[type="submit"] {
+    text-align: center;
     width: 100%;
-    height: 50px;
-    background-color: green;
+    height: 35px;
+    background-color: #2bb32b;
     color: white;
     border: none;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 strong {
     display: block;
-    font-size: 20px;
+    font-size: 18px;
     color: #a91346;
     overflow-wrap: break-word;
 }
 
 p {
+    font-size: 18px;
     color: gray;
+}
+
+/************** RESPONSIVIDADE **************/
+
+@media screen and (min-width: 425px) and (max-width: 765px){
+    legend{
+        font-size: 22px;
+        color: white;
+    }
+    
+    label {
+        font-size: 16px;
+        color: white;
+    }
+
+    button[type="submit"] {
+        font-size: 16px;
+    }
+
+    strong {
+        font-size: 16px;
+    }
+    
+    p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px){
+    legend{
+        font-size: 20px;
+        color: white;
+    }
+    
+    label {
+        font-size: 14px;
+        color: white;
+    }
+
+    button[type="submit"] {
+        font-size: 14px;
+    }
+
+    strong {
+        font-size: 14px;
+    }
+    
+    p {
+        font-size: 14px;
+    }
 }

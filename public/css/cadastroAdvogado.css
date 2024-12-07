@@ -1,0 +1,419 @@
+html, body {
+    background-color: #111130;
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 75px);
+    padding: 15px;
+}
+
+main section.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    padding: 15px;
+    background: #0C0C24;
+}
+
+main section.container div#informacoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+main section.container div.enviar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+main section.container div.enviar button {
+    text-align: center;
+    width: 30%;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    background-color: #2bb32b;
+    color: #fff;
+    font-weight: bold;
+}
+
+main section.container h1 {
+    text-align: center;
+    color: #fff;
+    margin: 5px 0;
+}
+
+main section.cadastro-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+
+/*-------------------------------------------------------------*/
+/*----------------- section.dadosCadastrais -------------------*/
+/*-------------------------------------------------------------*/
+
+main section.cadastro-container section.dadosCadastrais {
+    width: 100%;
+    margin: 15px 0;
+}
+
+main section.cadastro-container section.dadosCadastrais form {
+    width: 100%;
+    height: 100%;
+}
+
+main section.cadastro-container section.dadosCadastrais form fieldset{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+main section.cadastro-container section.dadosCadastrais form fieldset legend{
+    width: 100%;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+main section.cadastro-container section.dadosCadastrais form fieldset label, 
+main section.cadastro-container section.dadosCadastrais form fieldset input {
+    margin: 5px 0;
+}
+
+main section.cadastro-container section.dadosCadastrais form fieldset div {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    white-space: nowrap;
+}
+
+main section.cadastro-container section.dadosCadastrais form fieldset div.dataNascimentoSexo {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+main section.cadastro-container section.dadosCadastrais form fieldset div.dataNascimentoSexo div.dataNascimento input,
+main section.cadastro-container section.dadosCadastrais form fieldset div.dataNascimentoSexo div.sexo select {
+    background-color: #E6E6FA;
+    margin: 0 5px;
+    border: none;
+    width: 100%;
+    text-align: center;
+    text-align-last: center;
+}
+
+main section.cadastro-container section.dadosCadastrais form fieldset div.modeloDeConsultoria select {
+    display: flex;
+    align-items: center;
+    height: 20px;
+    margin: 0 5px;
+    background-color: #E6E6FA;
+    text-align: center;
+    text-align-last: center;
+}
+
+
+main section.cadastro-container section.dadosCadastrais form fieldset div.nomeSobrenome input,
+main section.cadastro-container section.dadosCadastrais form fieldset div.email input,
+main section.cadastro-container section.dadosCadastrais form fieldset div.tipoTelefone input,
+main section.cadastro-container section.dadosCadastrais form fieldset div.cpfNumeroOAB input {
+    width: 100%;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0 5px;
+    background-color: #E6E6FA;
+    border: none;
+    font-weight: bolder;
+    color: #000;
+}
+
+/*-------------------------------------------------------------*/
+/*---------------- section.informacoesEndereco ----------------*/
+/*-------------------------------------------------------------*/
+
+main section.cadastro-container section.informacoesEndereco {
+    width: 100%;
+}
+
+main section.cadastro-container section.informacoesEndereco form {
+    width: 100%;
+    height: 100%;
+}
+
+main section.cadastro-container section.informacoesEndereco form fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+main section.cadastro-container section.informacoesEndereco form fieldset legend {
+    width: 100%;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+main section.cadastro-container section.informacoesEndereco form fieldset label, 
+main section.cadastro-container section.informacoesEndereco form fieldset input {
+    margin: 5px 0;
+}
+
+main section.cadastro-container section.informacoesEndereco form fieldset div {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    white-space: nowrap;
+}
+
+main section.cadastro-container section.informacoesEndereco form fieldset div.cepBairro input,
+main section.cadastro-container section.informacoesEndereco form fieldset div.ruaNumero input,
+main section.cadastro-container section.informacoesEndereco form fieldset div.cidadeComplemento input {
+    width: 100%;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0 5px;
+    background-color: #E6E6FA;
+    border: none;
+    font-weight: bolder;
+    color: #000;
+}
+
+
+/*-------------------------------------------------------------*/
+/*-------------------- div.foto-container ---------------------*/
+/*-------------------------------------------------------------*/
+
+main section.container section.fotoPerfil-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    border-left: 1px solid #fff;
+    margin-left: 10px;
+    padding-left: 10px;
+    color: #fff;
+}
+
+section.fotoPerfil-container h1 {
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: bolder;
+}
+
+section.fotoPerfil-container img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top center;
+    background-size: cover;
+}
+
+
+section.fotoPerfil-container form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.fotoPerfil-container form label {
+    margin: 5px 0;
+}
+
+section.fotoPerfil-container input[type="file"] {
+    display: none;
+}
+
+section.fotoPerfil-container form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+  
+section.fotoPerfil-container form label.arquivo-label {
+    padding: 5px 10px;
+    background-color: #0066FF;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+}
+  
+section.fotoPerfil-container form  span.arquivo-texto {
+    margin-top: 5px;
+    color: #666;
+    font-weight: bolder;
+}
+
+
+/* 
+
+Essa propriedade está salva caso encontre dificuldade para fazer o botão funcionar
+
+section.fotoPerfil-container form button{
+    width: 50%;
+    height: 40px;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+*/
+
+/*-------------------------------------------------------------*/
+/*----------------------- @media Query ------------------------*/
+/*-------------------------------------------------------------*/
+
+@media screen and (min-width: 430px) and (max-width: 650px) {
+    main {
+        display: block;
+        height: auto;
+    }
+
+    main section.container div#informacoes {
+        flex-direction: column-reverse;
+    }
+
+    main section.container section.fotoPerfil-container {
+        margin: 0;
+        border-left: none;
+        border-bottom: 1px solid #fff;
+        width: 95%;
+    }
+
+    main section.container section.fotoPerfil-container form span {
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 430px) {
+    main {
+        display: block;
+        height: auto;
+    }
+
+    main section.container div#informacoes {
+        flex-direction: column-reverse;
+    }
+
+    main section.container section.fotoPerfil-container {
+        margin: 0;
+        border-left: none;
+        border-bottom: 1px solid #fff;
+        width: 95%;
+    }
+
+    main section.container section.fotoPerfil-container form span {
+        padding-bottom: 10px;
+    }
+
+    /*-------------------------------------------------------------*/
+    /*----------------- section.dadosCadastrais -------------------*/
+    /*-------------------------------------------------------------*/
+
+    main section.cadastro-container section.dadosCadastrais form fieldset div {
+        align-items: center;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        margin-bottom: 0;
+    }
+
+    main section.container div#informacoes section.cadastro-container section.dadosCadastrais form fieldset {
+        flex-direction: column;
+    }
+
+    main section.cadastro-container section.dadosCadastrais form fieldset div.nomeSobrenome,
+    main section.cadastro-container section.dadosCadastrais form fieldset div.email,
+    main section.cadastro-container section.dadosCadastrais form fieldset div.tipoTelefone,
+    main section.cadastro-container section.dadosCadastrais form fieldset div.cpfNumeroOAB {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        white-space: nowrap;
+
+    }
+
+    main section.cadastro-container section.dadosCadastrais form fieldset div.dataNascimentoSexo {
+        flex-direction: column;
+    }
+
+    main section.cadastro-container section.dadosCadastrais form fieldset div.dataNascimentoSexo div.dataNascimento,
+    main section.cadastro-container section.dadosCadastrais form fieldset div.dataNascimentoSexo div.sexo {
+        flex-direction: row;
+    }
+
+    main section.cadastro-container section.dadosCadastrais form fieldset div.dataNascimentoSexo div.sexo select,
+    main section.cadastro-container section.dadosCadastrais form fieldset div.modeloDeConsultoria select {
+        text-align: center;
+        text-align-last: center;
+        width: 100%;
+    }
+    
+
+
+    /*-------------------------------------------------------------*/
+    /*--------------- section.informacoesEndereco -----------------*/
+    /*-------------------------------------------------------------*/
+
+    main section.cadastro-container section.informacoesEndereco form fieldset div.cepBairro,
+    main section.cadastro-container section.informacoesEndereco form fieldset div.cidadeComplemento {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main section.cadastro-container section.dadosCadastrais form fieldset div.modeloDeConsultoria select {
+        width: 100%;
+    }
+
+    main section.cadastro-container section.dadosCadastrais form fieldset div.cpfNumeroOAB {
+        flex-direction: column;
+    }
+
+    main section.cadastro-container section.dadosCadastrais form fieldset div.tipoTelefone {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 320px) {
+
+    main section.cadastro-container section.dadosCadastrais form fieldset div.dataNascimentoSexo {
+        flex-direction: column;
+    }
+    main section.cadastro-container section.dadosCadastrais form fieldset div.dataNascimentoSexo div.dataNascimento,
+    main section.cadastro-container section.dadosCadastrais form fieldset div.dataNascimentoSexo div.sexo {
+        flex-direction: row;
+    }
+}   

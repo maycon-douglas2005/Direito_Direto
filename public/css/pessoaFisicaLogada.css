@@ -1,0 +1,128 @@
+body{
+    background-color: #111130;
+    color: white;
+}
+
+main{
+    height: 88.5vh;
+    width: 100vw;
+    background-color: #111130;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    
+}
+
+main section.campoDePesquisa{
+    background-color: #0C0C24; 
+    width: 25vw;
+    display: grid;
+    place-items: center;    
+}
+main section.campoDePesquisa form{
+    display: grid;
+    height: 100%;
+    width: 100%;
+}
+
+main section.campoDePesquisa form div.tituloFiltros, div.RadioDistancia, div.Especialidade, div.Honorario, div.ConsultaGratuita, div.BotaoEnviar  {
+    margin: 5vh; /* Adicionei margin a todos os elementos dentro do form para criar espaçamento*/
+} 
+
+main section.campoDePesquisa form div.tituloFiltros{
+    display: grid;
+}
+main section.campoDePesquisa form div.tituloFiltros h1{
+    font-size: 2rem;
+    align-self: end;
+    justify-self: center;
+}
+main section.campoDePesquisa form div.tituloFiltros hr{
+    height: 0vh; /* diminuindo tamnho do traço horizontal para o minimo visivel */
+}
+main section.campoDePesquisa form div.filtros div.CampoLocalização{
+    justify-self: right;
+    margin-left: 9%; /*Este campo estava desalinhado com os outros, entao foi necessário alinhar manualmente.*/
+}
+
+main section.campoDePesquisa form input[type="search"], select, input[type="checkbox"]{
+    border-radius: 1em;
+    background-color: #222252;
+    border: none;
+    color: white;
+    height: 2.8vh;
+}
+
+main section.campoDePesquisa form div.ConsultaGratuita{
+    display: grid;
+    grid-template-columns: 45% 55%;
+}
+
+main section.campoDePesquisa form div.BotaoEnviar button[type="submit"]{
+    background-color: #2bb32b;
+    width: 100%;
+    height: 5vh;
+    border-radius: 1em;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+main section.campoDePesquisa form div.BotaoEnviar:hover{
+    background-color: green;
+    border-radius: 1em; /* Tive que aplicar nessa classe e na classe acima por questões de bugs */
+}
+
+
+
+
+
+
+
+
+
+/*  SEÇÃO DOS PERFIS DOS ADVOGADOS */ 
+
+
+
+
+
+main section.AreaDosPerfis{
+    width: 75vw;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+}
+
+main section.AreaDosPerfis div.retanguloDosPerfis1 {
+    background-color: #0C0C24;
+    margin: 4%;
+    
+}
+
+main section.AreaDosPerfis div.retanguloDosPerfis2{
+    background-color: #0C0C24;
+    margin: 4%;
+}
+
+main section.AreaDosPerfis div.fotoDeFundo {
+    background-image: url('../img/capaFundoPerfilAdvogado.jpg');
+    background-size: cover;
+    height: 15vh;
+    width: 100%;
+}
+
+main section.AreaDosPerfis div.fotoDeFundo div.circuloFotoPerfil{
+    background-image: url('../img/perfil1.png');
+    height: 15vh;
+    width: 10vw;
+    border-radius: 100%;
+    background-size: cover;
+    position: relative;
+    top: 5vh;
+}
+
+main section.AreaDosPerfis div.informaçõesAdvogado{
+    float: right;
+    margin-top: 4%;
+    margin-right: 4%;
+}

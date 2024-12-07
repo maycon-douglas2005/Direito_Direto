@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+    line-height: 1.3;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 75px;
+    background-color: #0C0C24;
+}
+
+header div.menu-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header div.menu-container img#hamburger {
+    display: none;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+}
+
+header nav {
+    margin: 10px 0;
+}
+
+header nav#registroLogin {
+    padding-left: 111px;
+}
+
+header nav#menu ul li { 
+    font-size: 18px;
+    color: #b5bec7;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul a, span {
+    text-decoration: none;
+    color: #fff
+}
+
+header nav ul a li {
+    margin: 0 10px;
+    list-style: none;
+}
+
+header div.container {
+    display: none;
+    top: 50px;
+}
+
+/* ------------------------------- RESPONSIVIDADE ------------------------------- */
+
+@media screen and (min-width: 465px) and (max-width: 550px){
+    header div.menu-container div.menu #registroLogin, #menu {
+        display: none;
+    }
+
+    header div.menu-container img#hamburger {
+        display: block;
+        width: 35px;
+        height: 35px;
+        margin-right: 10px;
+        z-index: 1;
+    }
+
+    header div.container {
+        display: none;
+    }
+
+    header nav#menu-mobile {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0;
+        width: 150px;
+        height: auto;
+        background-color: #0C0C24;
+    }
+    
+    header nav#menu-mobile ul a {
+        text-decoration: none;
+    }
+    
+    header nav#menu-mobile ul a li {
+        margin: 5px 5px;
+    }
+    
+    header nav#menu-mobile ul.usuario {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid #fff;
+        margin: 0 5px;
+    }
+
+    header nav#menu-mobile ul.navegar {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    header nav#menu-mobile ul.navegar a li { 
+        text-decoration: none;
+        font-size: 16px;
+        color: #78838E;
+        margin: 5px 10px;
+    }
+    
+    header nav#menu-mobile ul.usuario a li {
+        text-decoration: none;
+        font-size: 16px;
+        color: #fff;
+    }
+}
+
+@media screen and (min-width: 380px) and (max-width: 465px){
+    header div.menu-container div.menu #registroLogin, #menu {
+        display: none;
+    }
+
+    header div.menu-container img#hamburger {
+        display: block;
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+        z-index: 1;
+    }
+
+    header div.container {
+        display: none;
+    }
+
+    header nav#menu-mobile {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0;
+        width: 150px;
+        height: auto;
+        background-color: #0C0C24;
+    }
+    
+    header nav#menu-mobile ul a {
+        text-decoration: none;
+    }
+    
+    header nav#menu-mobile ul a li {
+        margin: 5px 5px;
+    }
+    
+    header nav#menu-mobile ul.usuario {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid #fff;
+        margin: 0 5px;
+    }
+
+    header nav#menu-mobile ul.navegar {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    header nav#menu-mobile ul.navegar a li { 
+        text-decoration: none;
+        font-size: 16px;
+        color: #78838E;
+        margin: 5px 10px;
+    }
+    
+    header nav#menu-mobile ul.usuario a li {
+        text-decoration: none;
+        font-size: 16px;
+        color: #fff;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 380px){
+    header div.menu-container div.menu #registroLogin, #menu {
+        display: none;
+    }
+
+    header div.menu-container img#hamburger {
+        display: block;
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+
+    header div.container {
+        display: none;
+    }
+
+    header nav#menu-mobile {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0;
+        width: 150px;
+        height: auto;
+        background-color: #0C0C24;
+    }
+    
+    header nav#menu-mobile ul a {
+        text-decoration: none;
+    }
+    
+    header nav#menu-mobile ul a li {
+        margin: 5px 5px;
+    }
+    
+    header nav#menu-mobile ul.usuario {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid #fff;
+        margin: 0 5px;
+    }
+
+    header nav#menu-mobile ul.navegar {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    header nav#menu-mobile ul.navegar a li { 
+        text-decoration: none;
+        font-size: 16px;
+        color: #78838E;
+        margin: 5px 10px;
+    }
+    
+    header nav#menu-mobile ul.usuario a li {
+        text-decoration: none;
+        font-size: 16px;
+        color: #fff;
+    }
+}

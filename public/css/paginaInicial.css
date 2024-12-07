@@ -1,0 +1,835 @@
+html, body {
+    width: 100%;
+    z-index: 0;
+}
+
+main section.boasVindas {
+    display: flex;
+    background-color: #111130;
+    color: white;
+}
+
+main section.boasVindas div.sobreoSite{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 37%;
+    padding: 0 25px;
+}
+
+main section.boasVindas div.sobreoSite h1{
+    font-size: 32px;
+}
+
+main section.boasVindas div.sobreoSite p{
+    font-size: 18px;
+    margin: 10px 0;
+    overflow-wrap: break-word;
+}
+
+main section.boasVindas div.sobreoSite a{
+    text-decoration: none;
+    color: #0066FF;
+}
+
+main section.boasVindas div.busca{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/direitoDireto.png');
+    background-size: cover;
+    object-fit: cover;
+    width: 63%;
+    height: 600px;
+}
+
+main section.boasVindas div.busca span{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(37, 40, 61, 0.5);
+    width: 450px;
+    height: 150px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+main section.boasVindas div.busca span p{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+main section.boasVindas div.busca span a{
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #0066FF;
+    color: white;
+    padding: 5px 65px;
+    border-radius: 100px;
+    text-decoration: none;
+}
+
+/* ------------------------------- SECTION NOSSO SITE ------------------------------- */
+
+
+main section.nossoSite {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: #07091B;
+}
+
+main section.nossoSite h2 {
+    font-size: 36px;
+    padding: 10px 0;
+    color: white;
+}
+
+main section.nossoSite div.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    color: white;
+}
+
+main section.nossoSite div.cards div.card1, div.card2, div.card3, div.card4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    background-color: #111130;
+    box-shadow: 10px 10px 5px rgb(0, 0, 0);
+    border-radius: 20px;
+    margin: 30px 25px;
+    padding: 0 0 10px 0;
+}
+
+span.title{
+    font-weight: bold;
+    font-size: 24px;
+    padding: 10px 0;
+}
+
+main section.nossoSite div.cards p {
+    font-size: 20px;
+    margin: 15px 25px;
+}
+
+
+/* ------------------------------- DUVIDAS FREQUENTES ------------------------------- */
+
+main section.feedback-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: #111130;
+    color: #fff;
+    padding: 40px 0;
+}
+
+main section.feedback-container h3{
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+main section.feedback-container div.feedback  a {
+    text-decoration: none;
+    margin: 10px 0;
+    padding: 15px 100px;
+    background-color: #0066FF;
+    color: #fff;
+    border-radius: 5px;
+}
+
+main section.feedback-container div.feedback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteudo {
+    display: flex;
+    align-items: center;
+}
+
+/* ------------------------------- MODAL ------------------------------- */
+
+div.modal {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 70px;
+}
+
+div.modal div.modal-container {
+    display: flex;
+    justify-content: center;
+}
+
+div#myModal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 50px;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border: 1px solid #000;
+    background-color: #06081d;
+    color: #fff;
+  }
+  
+  div#myModal div.modal-content {
+    width: 500px;
+    height: 475px;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #000;
+    background-color: #06061f;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  div#myModal div.modal-content h1 {
+    text-align: center;
+    font-size: 24px;
+  }
+
+  div#myModal div.modal-content div strong {
+    font-size: 24px;
+  }
+
+  div#myModal div.modal-content ul strong {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+
+  div#myModal div.modal-content p {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+
+  div#myModal div.modal-content ul {
+    list-style: none;
+  }
+
+  div#myModal div.modal-content ul li {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  div#myModal form {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding: 10px 0;
+  }
+  
+  div#myModal form button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    background-color: #2bb32b;
+    color: #fff;
+    font-weight: bolder;
+    border: none;
+    cursor: pointer;
+  }
+  div#myModal form div.termo {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  div#myModal form label {
+    font-size: 16px;
+  }
+  
+  div#myModal form div.termo input {
+    margin-right: 5px;
+  }
+
+/* ------------------------------- MEDIA QUERY ------------------------------- */
+
+@media screen and (min-width: 1410px){
+
+    main section.nossoSite {
+        padding: 20px 0;
+    }
+
+    main section.nossoSite div.cards {
+        flex-wrap: nowrap;
+    }
+}
+
+@media screen and (min-width: 805px) and (max-width: 1050px) {
+
+    main section.nossoSite div.cards {
+        width: 1100px;
+        max-width: 100%;
+        gap: 0;
+        padding: 0;
+
+    }
+
+    main section.nossoSite div.cards div.card1, div.card2, div.card3, div.card4 {
+        width: 100%;
+        max-width: 350px;
+        margin: 30px 25px;
+        height: auto;
+    }
+
+    /* ------------------------------- MODAL ------------------------------- */
+
+    div.modal {
+        top: 60px;
+    }
+
+    div#myModal{
+        max-width: 500px;
+    }
+  
+    div#myModal div.modal-content {
+        width: 425px;
+        height: 380px;
+    }
+
+    div#myModal div.modal-content h1 {
+        font-size: 20px;
+    }
+
+    div#myModal div.modal-content div strong {
+        font-size: 20px;
+    }
+
+    div#myModal div.modal-content ul strong {
+        font-size: 14px;
+    }
+
+    div#myModal div.modal-content p {
+        font-size: 14px;
+    }
+
+    div#myModal div.modal-content ul li {
+        font-size: 14px;
+    }
+    
+    div#myModal form button{
+        width: 90px;
+        font-size: 14px;
+    }
+    div#myModal form label {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (min-width: 750px) and (max-width: 805px) {
+
+    main section.nossoSite {
+        padding-bottom: 20px;
+    }
+
+    main section.boasVindas{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 805px;
+    }
+
+    main section.boasVindas div.sobreoSite{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 0 0 0;
+        padding: 20px 25px 0 50px;
+        width: 100%;
+        height: 220px;
+    }
+
+    main section.boasVindas div.busca{
+        width: 100%;
+        height: 400px;
+        margin-top: 60px;
+    } 
+
+    main section.nossoSite div.cards div.card1, div.card2, div.card3, div.card4 {
+        max-width: 275px;
+        height: auto;
+    }
+
+    /* ------------------------------- MODAL ------------------------------- */
+
+    div.modal {
+        top: 60px;
+    }
+
+    div#myModal{
+        max-width: 500px;
+    }
+  
+    div#myModal div.modal-content {
+        width: 425px;
+        height: 380px;
+    }
+
+  div#myModal div.modal-content h1 {
+    font-size: 20px;
+  }
+
+  div#myModal div.modal-content div strong {
+    font-size: 20px;
+  }
+
+  div#myModal div.modal-content ul strong {
+    font-size: 14px;
+  }
+
+  div#myModal div.modal-content p {
+    font-size: 14px;
+  }
+
+  div#myModal div.modal-content ul li {
+    font-size: 14px;
+  }
+  
+  div#myModal form button{
+    width: 90px;
+    font-size: 14px;
+  }
+  div#myModal form label {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 550px) and (max-width: 750px) {
+
+    main section.nossoSite {
+        padding-bottom: 20px;
+    }
+
+    /* --------------- SECTION BOAS VINDAS --------------- */
+
+    main section.boasVindas{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 805px;
+    }
+
+    main section.boasVindas div.sobreoSite{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 0 0 0;
+        padding: 20px 25px 0 50px;
+        width: 100%;
+        height: 220px;
+    }
+
+    main section.boasVindas div.busca{
+        width: 100%;
+        height: 400px;
+        margin-top: 60px;
+    }
+
+    /* --------------- SECTION NOSSO SITE --------------- */
+
+    main section.nossoSite h2 {
+        font-size: 28px;
+        margin: 10px 0;
+        color: white;
+    }
+
+    main section.nossoSite div.cards {  
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        width: 100%;
+        max-width: 805px;
+        padding: 0;
+    }
+
+    main section.nossoSite div.cards div.card1, div.card2, div.card3, div.card4{
+        width: 100%;
+        max-width: 275px;
+        margin: 30px 25px;
+        height: auto;
+        padding: 10px 0 10px 0;
+    }
+
+    main section.nossoSite div.cards div.card1 span.title,
+    main section.nossoSite div.cards div.card2 span.title,
+    main section.nossoSite div.cards div.card3 span.title,
+    main section.nossoSite div.cards div.card4 span.title {
+        font-weight: bold;
+        font-size: 24px;
+        padding: 10px 0;
+    }
+
+    main section.nossoSite div.cards div.card1 p,
+    main section.nossoSite div.cards div.card2 p,
+    main section.nossoSite div.cards div.card3 p,
+    main section.nossoSite div.cards div.card4 p {
+        font-size: 16px;
+        margin: 15px 25px;
+    }
+
+    /* --------------- SECTION PERGUNTAS FREQUENTES --------------- */
+
+    main section.feedback h3{
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    main section.feedback ion-icon {
+        font-size: 20px;
+        color: #fff;
+    }
+
+    main section.feedback div.duvida1, div.duvida2, div.duvida3, div.duvida4 p{
+        font-size: 20px;
+        padding: 10px 0;
+    }
+
+    /* ------------------------------- MODAL ------------------------------- */
+
+    div.modal {
+        top: 60px;
+    }
+
+    div#myModal{
+        max-width: 480px;
+    }
+  
+    div#myModal div.modal-content {
+        width: 400px;
+        height: 360px;
+    }
+
+    div#myModal div.modal-content h1 {
+        font-size: 20px;
+    }
+
+    div#myModal div.modal-content div strong {
+        font-size: 20px;
+    }
+
+    div#myModal div.modal-content ul strong {
+        font-size: 14px;
+    }
+
+    div#myModal div.modal-content p {
+        font-size: 14px;
+    }
+
+    div#myModal div.modal-content ul li {
+        font-size: 14px;
+    }
+    
+    div#myModal form button{
+        width: 90px;
+        font-size: 14px;
+    }
+    div#myModal form label {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (min-width: 450px) and (max-width: 550px) {
+
+    main section.nossoSite {
+        padding-bottom: 20px;
+    }   
+
+    /* --------------- SECTION BOAS VINDAS --------------- */
+
+    main section.boasVindas{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 550px;
+    }
+
+    main section.boasVindas div.sobreoSite{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 0 0 0;
+        padding: 20px 25px 0 50px;
+        width: 100%;
+        height: 220px;
+    }
+
+    main section.boasVindas div.sobreoSite h1{
+        text-align: center;
+        font-size: 40px;
+    }
+
+    main section.boasVindas div.sobreoSite p{
+        font-size: 14px;
+    }
+
+    main section.boasVindas div.busca{
+        width: 100%;
+        height: 400px;
+        margin-top: 60px;
+    }
+
+    main section.boasVindas div.busca span p{
+        font-size: 24px;
+
+    }
+    
+    main section.boasVindas div.busca span a{
+        font-size: 16px;
+    }
+
+    /* --------------- SECTION NOSSO SITE --------------- */
+
+    main section.nossoSite h2 {
+        font-size: 28px;
+        margin: 10px 0;
+        color: white;
+    }
+
+    main section.nossoSite div.cards {  
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        width: 100%;
+        max-width: 450px;
+        padding: 0;
+    }
+
+    main section.nossoSite div.cards div.card1, div.card2, div.card3, div.card4{
+        max-width: 255px;
+        height: auto;
+        margin: 20px 10px;
+    }
+
+    span.title{
+        font-weight: bold;
+        font-size: 20px;
+    }
+    
+    main section.nossoSite div.cards p {
+        font-size: 16px;
+    }
+
+    /* --------------- SECTION PERGUNTAS FREQUENTES --------------- */
+
+    main section.feedback h3{
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    main section.feedback ion-icon {
+        font-size: 18px;
+        color: #fff;
+    }
+
+    main section.feedback div.duvida1, div.duvida2, div.duvida3, div.duvida4 p{
+        font-size: 18px;
+        padding: 10px 0;
+    }
+
+    /* ------------------------------- MODAL ------------------------------- */
+
+    div.modal {
+        top: 60px;
+    }
+
+    div#myModal{
+        max-width: 460px;
+    }
+  
+    div#myModal div.modal-content {
+        width: 380px;
+        height: 340px;
+    }
+
+    div#myModal div.modal-content h1 {
+        font-size: 20px;
+    }
+
+    div#myModal div.modal-content div strong {
+        font-size: 20px;
+    }
+
+    div#myModal div.modal-content ul strong {
+        font-size: 14px;
+    }
+
+    div#myModal div.modal-content p {
+        font-size: 14px;
+    }
+
+    div#myModal div.modal-content ul li {
+        font-size: 14px;
+    }
+    
+    div#myModal form button{
+        width: 90px;
+        font-size: 14px;
+    }
+    div#myModal form label {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 450px) {
+
+    /* --------------- SECTION BOAS VINDAS --------------- */
+    
+    main section.boasVindas{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 460px;
+    }
+
+    main section.boasVindas div.sobreoSite{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        padding: 20px;
+        width: 100%;
+        height: auto;
+    }
+
+    main section.boasVindas div.sobreoSite h1{
+        font-size: 20px;
+    }
+
+    main section.boasVindas div.sobreoSite p{
+        font-size: 14px;
+    }
+
+    main section.boasVindas div.busca{
+        width: 100%;
+        height: 400px;
+        margin-top: 0;
+    }
+
+    main section.boasVindas div.busca span {
+        width: 100%;
+    }
+
+    main section.boasVindas div.busca span p{
+        font-size: 20px;
+
+    }
+    
+    main section.boasVindas div.busca span a{
+        font-size: 14px;
+    }
+
+    /* --------------- SECTION NOSSO SITE --------------- */
+
+    main section.nossoSite h2 {
+        font-size: 20px;
+        margin: 10px 0;
+        color: white;
+    }
+
+    main section.nossoSite div.cards {  
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        align-items: center;
+        width: 100%;
+        max-width: 450px;
+        padding-bottom: 25px;
+    }
+
+    main section.nossoSite div.cards div.card1, div.card2, div.card3, div.card4{
+        max-width: 255px;
+        height: auto;
+        margin: 20px 10px;
+    }
+
+    span.title{
+        font-weight: bold;
+        font-size: 16px;
+    }
+    
+    main section.nossoSite div.cards p {
+        font-size: 14px;
+    }
+
+    /* --------------- SECTION PERGUNTAS FREQUENTES --------------- */
+
+    main section.feedback h3{
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    main section.feedback ion-icon {
+        font-size: 14px;
+        color: #fff;
+    }
+
+    main section.feedback div.duvida1, div.duvida2, div.duvida3, div.duvida4 p{
+        font-size: 14px;
+        padding: 10px 0;
+    }
+
+    /* --------------- MODAL --------------- */
+
+    div.modal {
+        top: 60px;
+    }
+
+    div#myModal{
+        max-width: 320px;
+    }
+  
+    div#myModal div.modal-content {
+        width: 280px;
+        height: 300px;
+    }
+
+    div#myModal div.modal-content h1 {
+        font-size: 20px;
+    }
+
+    div#myModal div.modal-content div strong {
+        font-size: 20px;
+    }
+
+    div#myModal div.modal-content ul strong {
+        font-size: 14px;
+    }
+
+    div#myModal div.modal-content p {
+        font-size: 14px;
+    }
+
+    div#myModal div.modal-content ul li {
+        font-size: 14px;
+    }
+    
+    div#myModal form button{
+        width: 90px;
+        font-size: 14px;
+    }
+    div#myModal form label {
+        font-size: 14px;
+    }
+}

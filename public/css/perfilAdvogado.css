@@ -2,179 +2,561 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
 }
-.seçãoPerfilAdvogado{
+html, body {
+    background-color: #111130;
+    width: 100%;
+}  
+main {
+    width: 100%;
+    height: 100%;
+}
+main section.perfilAdvogado {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: 340px;
     background-color: #0C0C24;
-    height: 24em;
-    width: 100%;
-    
 }
-a{
+main section.perfilAdvogado div.capaFundo {
+    width: 100%;
+    height: 165px;
+}
+main section.perfilAdvogado div.capaFundo img {
+    width: 100%;
+    height: 230px;
+    background-size: cover;
+}
+section.perfilAdvogado div.conteiner-fotoPerfil {
+    width: 100%;
+    display: flex;
+    padding: 0 15px;
+}
+section.perfilAdvogado div.conteiner-fotoPerfil div.nomeFormacao{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-right: 5px;
+}
+section.perfilAdvogado div.conteiner-fotoPerfil div.nomeFormacao div {
+    display: flex;
+}
+section.perfilAdvogado div.conteiner-fotoPerfil div.nomeFormacao h1 {
     color: white;
-    text-decoration: none;
+    font-size: 24px;
+    white-space: nowrap ;
 }
-section .capaFundo{
+section.perfilAdvogado div.conteiner-fotoPerfil div.nomeFormacao h2 {
+    color: white;
+    font-size: 20px;
+}
+main section.perfilAdvogado div.conteiner-fotoPerfil div.fotoPerfil {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%; 
+    overflow: hidden;
+}
+main section.perfilAdvogado div.conteiner-fotoPerfil div.fotoPerfil img {
     width: 100%;
-    height: 13em;
-    z-index: 1;
-    background-image: url('../img/capaFundoPerfilAdvogado.jpg');
-    background-position: center;
-    background-repeat: no-repeat;   
+    object-fit: cover;
+    object-position: top center;
     background-size: cover;
-    display: grid;
-    border: 1px solid black;
 }
-section div .fotoPerfil{
-    width: 8%;
-    height: 6em;
-    border-radius: 100%;
-    z-index: 2;
-    background-image: url('../img/perfil1.png');
-    background-size: cover;
-    margin-left: 5%;
-    margin-top: 12%;
-    border: 1px solid black;
+main section.perfilAdvogado div.informacoesPerfil {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    color: #fff;
+    margin: 70px 5px 0 5px;
+    width: 100%;
 }
-section .informacoesAdvogado{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    margin-top: 2%;
-    
+main section.perfilAdvogado div.informacoesAdvogado div.conteiner-fotoPerfil div.nomeFormacao,
+main section.perfilAdvogado div.informacoesAdvogado div.conteiner-fotoPerfil div.feedbackVisual {
+    margin-bottom: 5px;
 }
-section div .informacoesPessoais{
-    display: grid;
-    margin-left: 5%;
+main section.perfilAdvogado div.informacoesPerfil div.feedbackVisual {
+    display: flex;
+    flex-direction: column;
+}
+
+main section.perfilAdvogado div.conteiner-fotoPerfil div.informacoesPerfil div.separacao {
+    display: flex;  
+}
+
+main section.perfilAdvogado div.informacoesPerfil div.separacao div img{
+    width: 25px;
+    height: 25px;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+main section.perfilAdvogado div.conteiner-fotoPerfil div.informacoesPerfil div.feedbackVisual div.avaliacoes {
+    display: flex;
+    flex-direction: row;
+}
+main section.perfilAdvogado div.conteiner-fotoPerfil div.informacoesPerfil div.feedbackVisual div.redesSociais {
+    display: flex;
+}
+main section.perfilAdvogado div.conteiner-fotoPerfil div.informacoesPerfil div.feedbackVisual div.redesSociais strong {
+    margin-right: 5px;
+}
+main section.perfilAdvogado div.conteiner-fotoPerfil div.informacoesPerfil div.feedbackVisual div.redesSociais img {
+    width: 20px;
+    height: 20px;
+    margin-left: 2px;
+}
+main section.perfilAdvogado div.conteiner-fotoPerfil div.informacoesPerfil div.feedbackVisual div.casosResolvidos {
+    display: flex;
+} 
+main section.perfilAdvogado div.conteiner-fotoPerfil div.informacoesPerfil div.feedbackVisual div.casosResolvidos div.numeroCasos {
+    margin-left: 5px;
+} 
+main section.perfilAdvogado div.conteiner-fotoPerfil div.informacoesPerfil div.feedbackVisual div.avaliacoes strong{
+    margin-right: 5px;
+}
+main section.perfilAdvogado div.conteiner-fotoPerfil div.informacoesPerfil div.feedbackVisual div.avaliacoes div.nota {
+    display: flex;
+}
+main section.perfilAdvogado div.conteiner-fotoPerfil div.informacoesPerfil div.feedbackVisual div.avaliacoes div.nota div.estrela {
+    width: 20px;
+    height: 20px;
+    background-color: gold;
+    clip-path: polygon(
+        50% 0%, 
+        61% 35%, 
+        98% 35%, 
+        68% 57%, 
+        79% 91%, 
+        50% 70%, 
+        21% 91%, 
+        32% 57%, 
+        2% 35%, 
+        39% 35%
+    );
+    border: 1px solid #000;
+}
+
+/* MODAL */
+
+div#modal {
+    display: none;
+    background-color: #07091B;
+    width: 80px;
+    height: 100%;
+    border-radius: 10px;
+  }
+  
+  div#modal div ul {
+    padding: 10px 0;
+  }
+  
+  div#modal div ul li {
+    font-size: 18px;
+    text-align: center;
+    list-style: none;
+    color: #fff;
+    cursor: pointer;
+    margin: 5px 0;
+  }
+  
+  div#modal div ul li:hover {
+    text-decoration: underline;
+  }
+
+
+
+
+/*********************** RESUMO PROFISSIONAL ***********************/
+main section.resumoProfissional {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    color: #fff;
+}
+
+main section.resumoProfissional div.biografia,
+main section.resumoProfissional div.servicosOferecidos {
+    margin: 10px 10px;
+}
+main section.resumoProfissional div.biografia h1 {
+    margin-bottom: 5px;
+}
+
+main section.resumoProfissional div.biografia {
+    display: flex;
+    flex-direction: column;
+}
+
+main section.resumoProfissional div.biografia div.box{
+    width: 100%;
+    max-width: 500px;
+    height: 200px;
+    max-height: 500px;
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+main section.resumoProfissional div.servicosOferecidos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
-section div .feedbackVisual{
-    display: grid;
-    justify-content: end;
-    margin-right: 2%;
-}
-.seçãoResumoProfissional{
-    height: 25em;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: #111130; 
-}
-section .resumoProfissional {
-    width: 40vw;
-    height: 38vh;
-    justify-self: center;
-    margin-top: 7%;
-    
 
-}
-section .bordaResumoProfissional{
-    height: 60%;
-    width: 80%;
-    border: 1px solid white;
-    display: grid;
-    border-radius: 1em;
-    margin-bottom: 15%;
-}
-section div .paragrafoResumoProfissional{
-    margin-top: 2%;
-}
-.resumoProfissional h2 {
-    margin-top: 7%;
-    margin-left: 2%;
-}
-.seçãoResumoProfissional .servicosOferecidos{
-    align-self: center;
-    height: 39vh;
-    justify-self: center;
-    
-}
-.seçãoResumoProfissional .servicosOferecidos .bordaServicosOferecidos{
-    height: 80%;
-    width: 70%;
-    margin-left: 15%;
-    margin-top: 2%;
-    display: grid;
-    grid-template-areas: 
-        "btn1"
-        "btn2"
-        "btn3"
-    ;
-    grid-auto-rows: 20%;
-    row-gap: 10px;
-}
-.btn{
-    border: 1px solid white;
-    border-radius: 1em;
-    text-align: center;
-}
-.botao1{
-    grid-area: btn1;
-}
-.botao2{
-    grid-area: btn2;
-}
-.botao3{
-    grid-area: btn3;
-}
-.seçãoResumoProfissional .servicosOferecidos .bordaServicosOferecidos span{
-    display: inline-block;
-    margin-top: 6%;
+main section.resumoProfissional div.servicosOferecidos div.servico {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.sectionAvaliacoes{
-    background-color: #0C0C24;
-    height: 75vh;
-    width: 100%;
-    display: grid;
-    grid-template-areas: 
-        "titulo"
-        "cabecalhoPerfil"
-        "texto"
-    ;
-    grid-template-rows: 25% 10%;
-    
+main section.resumoProfissional div.servicosOferecidos h2 {
+    margin-bottom: 5px;
 }
-.sectionAvaliacoes h2{
-    grid-area: titulo;
-    justify-self: center;
-    width: 20%;
-    height: 20%;
+main section.resumoProfissional div.servicosOferecidos p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 125px;
+    height: 50px;
+    margin: 0 10px 20px;
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+}
+/*********************** AVALIACÕES ***********************/
+main section.avaliacoes {
+
+    width: 100%;
+    height: auto;
+    background-color: #07091B;
+    padding: 20px 0;
+    color: white;
+}
+main section.avaliacoes h3 {
+    margin-bottom: 15px;
+    font-size: 24px;
     text-align: center;
-    margin-top: 2%;
+    color: #fff;
 }
-.cabecalhoPerfil{
-    grid-area: cabecalhoPerfil;
-    display: grid;
-    grid-template-columns: 10% 90%;
-    grid-template-areas: 
-        "foto nome"
-    ;
+main section.avaliacoes div.perfilComentario {
+    display: flex;
+    justify-content: center;
+    padding: 0 10px;
+}
+main section.avaliacoes div.perfilComentario div.perfilUsuario{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%; 
+    overflow: hidden;
+}
+main section.avaliacoes div.perfilComentario div.perfilUsuario img {
     width: 100%;
-    height: 50%;
-    margin-left: 5%;
-}
-.sectionAvaliacoes .cabecalhoPerfil .fotoPerfilAvaliacao{
-    background-image: url('../img/perfilAvaliações.jpg');
-    height: 10vh;
-    width: 8vw;
+    height: 75px;
     border-radius: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
+    object-fit: cover;
+    object-position: top center;
     background-size: cover;
-    grid-area: foto;   
 }
-.sectionAvaliacoes .cabecalhoPerfil h4{
-    grid-area: nome;
-    height: 30%;
-    width: 15%;
-    margin-top: 1%;
+main section.avaliacoes div.perfilComentario div.feedback {
+    width: 60%;
+    margin: 0 10px;
 }
-.sectionAvaliacoes .caixaTexto{
-    grid-area: texto;
-    border: 1px solid white;
-    width: 70%;
-    justify-self: center;
-    height: 80%;
-    border-radius: 1em;
+main section.avaliacoes div.perfilComentario div.feedback div.usuario{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+main section.avaliacoes div.perfilComentario div.feedback div.usuario p{
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+}
+main section.avaliacoes div.perfilComentario div.feedback div.usuario div.nota {
+    display: flex;
+}
+main section.avaliacoes div.perfilComentario div.feedback div.usuario div.nota div.estrela {
+    width: 15px;
+    height: 15px;
+    background-color: gold;
+    clip-path: polygon(
+        50% 0%, 
+        61% 35%, 
+        98% 35%, 
+        68% 57%, 
+        79% 91%, 
+        50% 70%, 
+        21% 91%, 
+        32% 57%, 
+        2% 35%, 
+        39% 35%
+    );
+    border: 1px solid #000;
+}
+main section.avaliacoes div.perfilComentario div.feedback div.comentario, textarea.comentario {
+    width: 100%;
+    height: 180px;
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+    margin-top: 10px;
+    background-color: #151541;
+}
+
+/*********************** RESPONSIVIDADE ***********************/
+@media screen and (min-width: 425px) and (max-width: 768px) {
+    
+    main section.perfilAdvogado {
+        height: 450px;
+    }
+    main section.perfilAdvogado div.capaFundo {
+        width: 100%;
+        height: 135px;
+    }
+    
+    main section.perfilAdvogado div.capaFundo img {
+        width: 100%;
+        height: 205px;
+        background-size: cover;
+    }
+    main section.perfilAdvogado div.conteiner-fotoPerfil div.nomeFormacao {
+        margin: 0;
+    }
+    main section.perfilAdvogado div.conteiner-fotoPerfil {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    main section.perfilAdvogado div.informacoesPerfil {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        color: #fff;
+        margin: 0;
+        width: 100%;
+    }
+    section.perfilAdvogado div.conteiner-fotoPerfil div.nomeFormacao {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
+    }
+    main section.perfilAdvogado div.conteiner-fotoPerfil div.fotoPerfil {
+        width: 110px;
+        height: 110px;
+        flex-wrap: wrap;
+    }
+    main section.perfilAdvogado div.conteiner-fotoPerfil div.informacoesPerfil div.feedbackVisual div.redesSociais {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    main section.perfilAdvogado div.conteiner-fotoPerfil div.informacoesPerfil div.feedbackVisual {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 25px;
+    }
+    main section.perfilAdvogado div.conteiner-fotoPerfil div.informacoesPerfil div.feedbackVisual div.casosResolvidos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } 
+    main section.perfilAdvogado div.conteiner-fotoPerfil div.informacoesPerfil div.feedbackVisual div.avaliacoes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    main section.perfilAdvogado div.conteiner-fotoPerfil div.informacoesPerfil div.feedbackVisual div.avaliacoes div.nota{
+        display: flex;
+    }
+    /*********** RESUMO PROFISSIONAL ***********/
+    main section.resumoProfissional {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+    main section.resumoProfissional div.biografia div.box{
+        max-width: 700px;
+    }
+    main section.resumoProfissional div.servicosOferecidos {
+        width: 100%;
+    }
+    main section.resumoProfissional div.servicosOferecidos div.servico {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 10px;
+    }
+    /*********** AVALIACÕES ***********/
+
+    main section.avaliacoes div.perfilComentario div.feedback {
+        width: 100%;
+        margin: 0 10px;
+    }
+
+    main section.avaliacoes div.perfilComentario div.perfilUsuario {
+        width: 50px;
+        height: 50px;
+        margin-left: 5px;
+    }
+
+    main section.resumoProfissional div.biografia h1 {
+        font-size: 22px;
+    }
+    main section.resumoProfissional div.servicosOferecidos h2 {
+        font-size: 22px;
+    }
+    main section.resumoProfissional div.biografia div.box p {
+        font-size: 16px;
+    }
+    main section.avaliacoes h3 {
+        font-size: 22px;
+    }
+    
+}
+@media screen and (max-width: 425px) {
+    main section.perfilAdvogado {
+        height: 480px;
+        height: auto;
+        padding-bottom: 10px;
+    }
+    main section.perfilAdvogado div.capaFundo {
+        height: 100px;
+    }
+    main section.perfilAdvogado div.capaFundo img {
+        height: 160px;
+    }
+    section.perfilAdvogado div.conteiner-fotoPerfil {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    main section.perfilAdvogado div.conteiner-fotoPerfil div.nomeFormacao h1 {
+        font-size: 20px;
+    }
+    main section.perfilAdvogado div.conteiner-fotoPerfil div.nomeFormacao h2 {
+        font-size: 16px;
+    }
+    main section.perfilAdvogado div.conteiner-fotoPerfil div.nomeFormacao p {
+        font-size: 14px;
+    }
+    main section.perfilAdvogado div.conteiner-fotoPerfil div.fotoPerfil {
+        width: 100px;
+        height: 100px;
+    }
+    main section.perfilAdvogado div.informacoesPerfil {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        margin: 0;
+    }
+    main section.perfilAdvogado div.conteiner-fotoPerfil div.nomeFormacao {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+    main section.perfilAdvogado div.conteiner-fotoPerfil div.informacoesPerfil div.feedbackVisual {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+    main section.perfilAdvogado div.conteiner-fotoPerfil div.informacoesPerfil div.feedbackVisual div.redesSociais,
+    main section.perfilAdvogado div.conteiner-fotoPerfil div.informacoesPerfil div.feedbackVisual div.casosResolvidos,
+    main section.perfilAdvogado div.conteiner-fotoPerfil div.informacoesPerfil div.feedbackVisual div.avaliacoes  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5px 0;
+    }
+    /*********** RESUMO PROFISSIONAL ***********/
+    main section.resumoProfissional {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+    main section.resumoProfissional div.biografia {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main section.resumoProfissional div.biografia h1 {
+        font-size: 20px;
+    }
+    main section.resumoProfissional div.servicosOferecidos h2 {
+        font-size: 20px;
+    }
+
+    main section.resumoProfissional div.biografia div.box{
+        max-width: 700px;
+        height: 120px;
+    }
+
+    main section.resumoProfissional div.biografia div.box p {
+        font-size: 14px;
+    }
+    main section.resumoProfissional div.servicosOferecidos {
+        width: 100%;
+    }
+    main section.resumoProfissional div.servicosOferecidos div.servico{
+        flex-direction: row;
+        margin-top: 5px;
+    }
+    main section.resumoProfissional div.servicosOferecidos p {
+        width: 100px;
+        height: 50px;
+        font-size: 14px;
+    }
+    /*********** AVALIACÕES ***********/
+
+    main section.avaliacoes div.perfilComentario div.perfilUsuario {
+        width: 50px;
+        height: 50px;
+    }
+
+    main section.avaliacoes div.perfilComentario div.feedback {
+        width: 100%;
+    }
+
+    main section.avaliacoes div.perfilComentario div.feedback div.usuario p {
+        font-size: 14px;
+    }
+
+    main section.avaliacoes div.perfilComentario div.feedback div.usuario div.nota div.estrela {
+        width: 10px;
+        height: 10px;
+    }
+
+    main section.avaliacoes div.perfilComentario div.feedback div.comentario {
+        width: 100%;
+        height: 120px;
+    }
+
+    main section.avaliacoes h3 {
+        font-size: 20px;
+    }
 }

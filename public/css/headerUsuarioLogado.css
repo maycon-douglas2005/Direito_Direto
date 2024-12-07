@@ -1,0 +1,191 @@
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+  * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      text-align: justify;
+      line-height: 1.3;
+  }
+  
+  header {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      height: 75px;
+      background-color: #0C0C24;
+  }
+  
+  header div.menu-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+  }
+  
+  header div.menu-container img#perfil {
+      cursor: pointer;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      padding-right: 5px;
+  }
+  
+  header nav {
+      margin: 10px 0;
+  }
+  
+  header nav#registroLogin {
+      padding-left: 111px;
+  }
+  
+  header nav#menu ul li { 
+      font-size: 18px;
+      color: #b5bec7;
+  }
+  
+  header nav ul {
+      display: flex;
+  }
+  
+  header nav ul a, span {
+      text-decoration: none;
+      color: #fff
+  }
+  
+  header nav ul a li {
+      margin: 0 10px;
+      list-style: none;
+  }
+  
+  header div.container {
+      display: none;
+      top: 50px;
+  }
+
+  /** MODAL **/
+
+  div.usuario-container {
+    display: none;
+    position: relative;
+    top: 84px;
+    width: 150px;
+    height: auto;
+    background-color: #111130;
+  }
+  
+  div.usuario-container div.fotoPerfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 5px 0;
+  }
+  
+  div.usuario-container  div.fotoPerfil img{
+    width: 50px;
+    height: 50px;
+    background-color: #d9d9d9;
+    border-radius: 50%;
+    margin: 5px 0;
+  }
+  
+  div.usuario-container  div.fotoPerfil p {
+    font-size: 18px;
+    color: #fff;
+  }
+  
+  div.usuario-container div#modalUsuarioLogado {
+    width: 100%;
+  }
+  
+  
+  div.usuario-container div#modalUsuarioLogado ul.navegacaoSite {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    padding: 5px 0;
+  }
+  
+  div.usuario-container div#modalUsuarioLogado ul.navegacaoSite a{
+    text-decoration: none;
+  }
+
+  div.usuario-container div#modalUsuarioLogado ul.navegacaoSite li,
+  div.usuario-container div#modalUsuarioLogado ul.sair li  {
+    list-style: none;
+    font-size: 18px;
+    color: #fff;
+    padding: 2px 5px;
+  }
+  
+  div.usuario-container div#modalUsuarioLogado ul.navegacaoSite li:hover,
+  div.usuario-container div#modalUsuarioLogado ul.sair li:hover {
+    background-color: #c9c9c9;
+    opacity: 0.9;
+  }
+  
+  /* ------------------------------- RESPONSIVIDADE ------------------------------- */
+  
+  @media screen and (min-width: 425px) and (max-width: 768px){
+
+    div.usuario-container {
+        top: 70px;
+      }
+      
+
+    header nav#menu ul li { 
+        font-size: 16px;
+    }
+
+    div.usuario-container div#modalUsuarioLogado ul.navegacaoSite li,
+    div.usuario-container div#modalUsuarioLogado ul.sair li  {
+      font-size: 16px;
+    }
+
+    div.usuario-container  div.fotoPerfil p {
+        font-size: 16px;
+    }
+
+    /* Foto perfil */
+
+    div.usuario-container  div.fotoPerfil img{
+        width: 40px;
+        height: 40px;
+    }
+
+    header div.menu-container img#perfil {
+        width: 40px;
+        height: 40px;
+    }
+  }
+  
+  @media screen and (min-width: 320px) and (max-width: 425px){
+
+    div.usuario-container {
+        top: 66px;
+      }
+
+    header nav#menu ul li { 
+        font-size: 14px;
+    }
+
+    div.usuario-container div#modalUsuarioLogado ul.navegacaoSite li,
+    div.usuario-container div#modalUsuarioLogado ul.sair li  {
+      font-size: 14px;
+    }
+
+    div.usuario-container  div.fotoPerfil p {
+        font-size: 14px;
+    }
+
+    /* Foto perfil */
+
+    div.usuario-container  div.fotoPerfil img{
+        width: 45px;
+        height: 45px;
+    }
+
+    header div.menu-container img#perfil {
+        width: 45px;
+        height: 45px;
+    }
+  }
