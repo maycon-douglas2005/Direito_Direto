@@ -10,7 +10,7 @@
     const form3Data = new FormData(document.getElementById('form3')); 
     form3Data.forEach((value, key) => { formData.append(key, value); }); 
 
-    // Verifique os dados enviados
+    
     formData.forEach((value, key) => { console.log(key, value); });
 
     fetch('../Model/inserindo_dados_do_form_no_bd.php', { 
@@ -23,6 +23,19 @@
         throw new Error('Network response was not ok.'); 
     }).then(data => { 
         console.log('Success:', data);
+        
+        
+        return fetch('../Controller/get_info_id_and_specialization.php', {
+            method: 'POST',
+            body: formData
+        });
+    }).then(response => {
+        if(response.ok) {
+            return response.text();
+        }
+        throw new Error('Network response was not ok.');
+    }).then(data => {
+        console.log('Success second fetch:', data);
         window.location.href="../View/login.php"; 
     }).catch(error => { 
         console.error('Error:', error); 
