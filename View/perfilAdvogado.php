@@ -98,7 +98,7 @@
 
     // Pegando as avaliações do perfil do advogado para exbir na seção avaliações
 
-        $id_do_advogado_segundo_url = $_GET['id'];
+        $id_do_advogado_segundo_url = isset($_GET['id']) ? $_GET['id'] : $_SESSION['idDoAdvSegundoLogin'];
         $pegando_avaliacoes_do_perfil_advogado = $conexao->prepare('SELECT * FROM avaliacoes WHERE id_advogado = :id_advogado AND id % 2 = 1');
         $pegando_avaliacoes_do_perfil_advogado->bindParam(':id_advogado', $id_do_advogado_segundo_url);
         $pegando_avaliacoes_do_perfil_advogado->execute();
