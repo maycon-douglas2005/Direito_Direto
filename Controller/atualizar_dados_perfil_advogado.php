@@ -25,4 +25,10 @@ if ($atualizaPerfil->execute()) {
 } else {
     echo 'Erro ao atualizar os dados.';
 }
+
+
+$atualizar_especialidade_tabela_advogados = $conexao->prepare('UPDATE advogados SET especialidade = :especialidade WHERE id = :id');
+$atualizar_especialidade_tabela_advogados->bindParam(':id', $id);
+$atualizar_especialidade_tabela_advogados->bindParam(':especialidade', $especialidade_1);
+$atualizar_especialidade_tabela_advogados->execute();
 ?>
