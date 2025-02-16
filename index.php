@@ -31,7 +31,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="public/css/header.css">
+    <link rel="stylesheet" href=<?php echo isset($_SESSION['email']) ? "public/css/headerUsuarioLogado.css" : "public/css/header.css"; ?>>
     <link rel="stylesheet" href="public/css/paginaInicial.css">
     <link rel="stylesheet" href="public/css/footer.css">
 
@@ -285,7 +285,9 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
     <!--Lógica-->
+
     <script src="public/javascript/menu.js"></script>
+    <script src="public/javascript/menuLogado.js"></script>
     <script src="public/javascript/modal.js"></script>
 
     <!--Acessibilidade Libras-->
